@@ -16,5 +16,5 @@ Animal Oscar = new Dog();
 ```  
 #### Ignoring access modifiers for you class and class members
 Remember that if you don't use any access modifiers that will apply the default one. Do we always want
-to have all elements with default access modifiers. Remind yourself about encapsulation principle and 
+to have all elements with default access modifiers? Remind yourself about encapsulation principle and 
 when private or public should be used.
