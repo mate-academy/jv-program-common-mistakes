@@ -1,7 +1,7 @@
 ### Common mistakes
 
 #### Using private constructor of class 
-If you use builder pattern better make constructor of outer class with a Builder as an input parameter private.
+If you use a builder pattern, make the outer class's constructor with a Builder input parameter private, not public, default or protected.
 We should hide it from users and forbid to pass Builder in parameters.
 
 #### Using getters in builder

@@ -11,8 +11,8 @@ BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName))
 ```  
 
 ### Constants.
-Some strange strings or numbers in the code better make as constants. 
-The name of this constant should be the information about what this objects for.
+If you have strange strings or numbers in the code it's better to declare them as constants.
+The name of the constant should display this object's purpose.
 ```
 Bad practice:
     public boolean startWithLetter(String word) {
@@ -31,7 +31,7 @@ Good practice:
 
 ### Close all resources.
 Connections, streams, files, and other classes that implement the `Closeable` or `AutoCloseable` interface, 
-needs to be closed after use. Further, that close must be made in a `finally` block. 
+needs to be closed after use. Furthermore, that close should be done in a `finally` block.
 Preferably, when class implements `AutoCloseable`, resource should be created using "try-with-resources" pattern 
 and will be closed automatically.
 
