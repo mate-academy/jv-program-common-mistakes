@@ -6,13 +6,35 @@ Example:
 public class Shelf {
     private Object[] items;
 
-    public Shelf {
+    public Shelf() {
         items = new Object[]{"book", "photo", "phone"};
     }
 }
 ```
 #### Any magic numbers should be constants
 Your code should be easy to read. Let's move all hardcoded values to constant fields and give them informative names.
+
+Bad:
+```java
+public class Shelf {
+    private Object[] items;
+
+    public Shelf() {
+        items = new Object[6];
+    }
+}
+```
+Good:
+```java
+public class Shelf {
+    private static final int MAX_ITEMS_NUMBER = 6;
+    private Object[] items;
+
+    public Shelf() {
+        items = new Object[MAX_ITEMS_NUMBER];
+    }
+}
+```
 #### Don’t use any kind of List, Set or Map
 We will soon learn how these collections work.
 #### Don’t create repeating code
