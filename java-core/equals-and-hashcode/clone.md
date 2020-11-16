@@ -1,18 +1,18 @@
 ### Common mistakes
 
 #### Ignoring encapsulation
-Remember to use access modifiers with all class elements. We should explicitly control access level to 
+Remember to use access modifiers with all class elements. We should explicitly control the access level to 
 different parts of our code.
 
-#### Creating shallow copy of object's field
-If you copy object of class `Car` with field `Engine` inside - keep in mind that `engine` may have non-primitive fields
-on its own. So how will they be copied?  What influence does it make on our  `car` copy? Is it deep ro shallow?
+#### Creating a shallow copy of object's field
+If you copy an object of class `Car` with field `Engine` inside - keep in mind that `engine` may have non-primitive fields
+on its own. So how will they be copied?  What influence does it make on our  `car` copy? Is it deep or shallow?
 
 #### Order of methods in your class
-Your class should have clear readable structure and order of elements. Generally, order
+Your class should have a clear readable structure and order of elements. Generally, order
 class methods by functionality, meaning if you have several methods that are involved in completing 
-common task they should be located near to each other independently of their accessibility.  
-Let's consider following situation: we need to calculate salary for some employee. In our class we use
+a common task they should be located near to each other independently of their accessibility.  
+Let's consider the following situation: we need to calculate the salary of an employee. In our class we use
 3 methods to achieve desired result: `getMonthlySalary()`, `getInitialSalary()` and `getMonthlyBonus()` methods.  
 How can we order our methods?   
 ``` 
@@ -49,6 +49,5 @@ private int getMonthlyBonus(Person employe); {...}
 
 // Other methods
 ```
-In second example we've united all methods with common purpose in one place, which makes our code easier to read 
-and understand. In case you don't have several methods with common logic it will make sense to order them by 
+In the second example we've united all methods with a common purpose in one place, which makes our code easier to read and understand. In case you don't have several methods with common logic it will make sense to order them by 
 accessibility (from `public` to `private`).
