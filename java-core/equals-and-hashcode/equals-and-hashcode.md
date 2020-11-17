@@ -19,7 +19,7 @@ create a new object and cast it to the needed type just once.
 
 #### Comparing types with `instanceof` or `getClass()`
 You should choose which of these options will suit us the best. What's the difference between them
-anyway. Try to figure it out on your own, but if you stuck, here's a [hint](https://overcoder.net/q/59643/instanceof-vs-getclass#1971415)
+anyway. Try to figure it out on your own, but if you're stuck, here's a [hint](https://overcoder.net/q/59643/instanceof-vs-getclass#1971415)
 
 #### Not following all rules from equals and hashcode contract
 Remember all theory that you've just learned, does your code fulfill all requirements? 

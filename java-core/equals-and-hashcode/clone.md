@@ -6,7 +6,7 @@ different parts of our code.
 
 #### Creating a shallow copy of object's field
 If you copy an object of class `Car` with field `Engine` inside - keep in mind that `engine` may have non-primitive fields
-on its own. So how will they be copied?  What influence does it make on our  `car` copy? Is it deep or shallow?
+on its own. So how will they be copied?  What influence does it make on our `car` copy? Is it deep or shallow?
 
 #### Order of methods in your class
 Your class should have a clear readable structure and order of elements. Generally, order
@@ -18,12 +18,12 @@ How can we order our methods?
 ``` 
 Bad example: 
 
-private int getMonthlyBonus(Person employe); {...}
+private int getMonthlyBonus(Person employee); {...}
 
-//Contstructor and some methods..
+//Constructor and some methods..
 
 public int getMonthlySalary(Person employee) {
-    int initialSalary = getInitiallySalary(employee);
+    int initialSalary = getInitialSalary(employee);
     int bonuses = getMonthlyBonus(employee);
     return initialSalary + bonuses;
 }
@@ -35,17 +35,17 @@ private int getInitialSalary(Person employee); {...}
 ``` 
 Refactored code: 
 
-//Contstructor and other class elements..
+//Constructor and other class elements..
 
 public int getMonthlySalary(Person employee) {
-    int initialSalary = getInitiallySalary(employee);
+    int initialSalary = getInitialSalary(employee);
     int bonuses = getMonthlyBonus(employee);
     return initialSalary + bonuses;
 }
 
 private int getInitialSalary(Person employee); {...}
 
-private int getMonthlyBonus(Person employe); {...}
+private int getMonthlyBonus(Person employee); {...}
 
 // Other methods
 ```

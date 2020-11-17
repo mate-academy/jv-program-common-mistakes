@@ -15,7 +15,7 @@ Bad Example:
 ```
 Refactored code: 
  public int returnModulus(int input) {
-    if (intpu % 2 == 0) {
+    if (input % 2 == 0) {
         return 0;
     }
     return 1;
