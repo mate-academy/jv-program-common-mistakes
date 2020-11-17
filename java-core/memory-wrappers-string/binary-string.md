@@ -10,7 +10,7 @@ On the other hand, StringBuilder is mutable and thus is considered to be a very 
 
 #### Remember about informative names of the variables.
 Writing proper variable names can be a highly valuable investment to the quality of your code. 
-Not only you and your teammates understand your code better, it can improve code sustainability in the future later on. 
+Not only you and your teammates understand your code better, but it can also improve code sustainability in the future later on. 
 When you go back to the same code base and re-read it over again, you should understand what is going on.
 
 Bad example:
