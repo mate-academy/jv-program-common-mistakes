@@ -14,7 +14,7 @@ public class Shelf {
 #### Any magic numbers should be constants
 Your code should be easy to read. Let's move all hardcoded values to constant fields and give them informative names.
 
-Bad:
+Bad example:
 ```java
 public class Shelf {
     private Object[] items;
@@ -24,7 +24,7 @@ public class Shelf {
     }
 }
 ```
-Good:
+Refactored code:
 ```java
 public class Shelf {
     private static final int MAX_ITEMS_NUMBER = 6;
