@@ -1,6 +1,6 @@
 ### Common mistakes
 
-#### Make `Node` and inner class.
+#### Make `Node` an inner class.
 The purpose of inner classes is to group classes that belong together, which makes your code more readable and maintainable.
 #### When creating a new `Node`, pass all the fields to `Node` constructor.
 #### Create informative variable names.
@@ -32,4 +32,4 @@ Redundant variables are confusing and make your code less clean and much more di
 #### Don’t forget about access modifiers
 You should never want to expose the object fields directly. They should be accessed through special methods (getters and setters).
 #### If you tested in `main()`, don’t forget to remove it as well as all commented code.
-#### Don’t forget that you can have `null` as a method parameter.
+#### Don’t forget that you can have `null` as a method parameter in `remove(T object) method`.
