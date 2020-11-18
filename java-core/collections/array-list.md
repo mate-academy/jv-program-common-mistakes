@@ -33,7 +33,6 @@ There is even a software design principle called [DRY](https://dzone.com/article
 Redundant variables are confusing and make your code less clean and much more difficult to read. Not to mention they occupy stack memory.
 #### Use [System.arraycopy()](https://docs.oracle.com/javase/8/docs/api/java/lang/System.html#arraycopy-java.lang.Object-int-java.lang.Object-int-int-) to move your array elements.
 #### Resize the array in a separate method.
-According to one of the important OOP principles called **Single Responsibility** principle, any software component must have only one responsibility, that is, to be in charge of doing just one concrete thing.
-[More about SOLID principles.](https://medium.com/webbdev/solid-4ffc018077da)
+According to one of the important principles called **Single Responsibility** principle, any software component must have only one responsibility, that is, to be in charge of doing just one concrete thing.
 #### Make your exceptions informative.
 If you throw an Exception, you should always add an informative message so that it would be clear from the stack trace what exactly went wrong.
