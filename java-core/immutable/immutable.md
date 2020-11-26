@@ -16,7 +16,7 @@ Make sure you've followed each one of these points:
 #### Ignoring null checks 
 ```
 public void showAge(Person person) {
-    Systme.out.println("Person is " + person.getAge() + " years old");
+    System.out.println("Person is " + person.getAge() + " years old");
 }
 ```
 What's gonna happen if pass `null` as an input into method? 
