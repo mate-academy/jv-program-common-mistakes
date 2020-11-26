@@ -1,6 +1,6 @@
 ### Common mistakes
 
-#### Use existing methods of the `Set` interface
+#### Ignoring existing methods of the `Set` interface
 Interface `Set` has a lot of [methods](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html). 
 It is better to use existing methods, if possible, than to create your own.
 
