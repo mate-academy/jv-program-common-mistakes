@@ -1,11 +1,12 @@
 ### Common mistakes
 
 #### Incorrect `clone()` implementation
-Remember that calling `clone()` should return deep copy if we want our class to be truly immutable.
-Reminder:
+Remember that calling `clone()` should return a deep copy if we want our class to be truly immutable.  
+Reminder:  
 [Shallow vs deep copy](https://javaconceptoftheday.com/difference-between-shallow-copy-vs-deep-copy-in-java/)
 
-#### Ignoring immutable class declaration rule:
+#### Ignoring immutable class declaration rules:
+Make sure you've followed each one of these points:   
 * Class should be declared as `final`  so it can’t be extended.
 * Make all fields private final so the direct access is not allowed and field value can be assigned only once.
 * Your class can't have setter methods for fields.
