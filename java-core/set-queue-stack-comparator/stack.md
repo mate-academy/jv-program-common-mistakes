@@ -7,14 +7,14 @@ to [constant fields](https://mate-academy.github.io/style-guides/java/java.html#
 #### Use getters and setters in class Node
 We have access to private fields of inner class, so using getters or setters is redundant.
 
-#### Parameterization of the Node class
-Class `Node` take value, so we should parameterized it to prevent problems with data types.
+#### Declaring raw Node class instead of using generics
+Class `Node` takes a value, so we should parameterize it to prevent problems with data types.
 
 #### Using public access modifiers everywhere
 If the method has only a utility purpose and is used only inside the same class, it should not be 
 `public`. Keep your code as close as possible to follow the encapsulation principle.
 
-#### Remember about access modifiers.
+#### Default access modifiers.
 All fields and methods should have access modifiers. Remember about the encapsulation principle.
 
 #### Variable naming
