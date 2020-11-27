@@ -1,6 +1,6 @@
 ### Common mistakes
 
-#### Remember about informative name of the variables.
+#### Create variables with informative names.
 ```
 Bad naming:
 BufferedReader br = new BufferedReader(new FileReader(fileName))
@@ -10,7 +10,7 @@ Good naming:
 BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName))
 ```  
 
-#### Constants.
+#### Use constants where applicable.
 If you have strange strings or numbers in the code it's better to declare them as constants.
 The name of the constant should display this object's purpose.
 ```
