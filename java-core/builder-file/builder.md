@@ -1,4 +1,4 @@
-### Points to remember
+### Common mistakes
 
 #### Use private constructor of class 
 If you use a builder pattern, make the outer class's constructor with a Builder input parameter private, not public, default or protected.

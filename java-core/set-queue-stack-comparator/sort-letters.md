@@ -1,6 +1,6 @@
 ### Common mistakes
 
-#### Check existing method of the `Character` class
+#### Check existing methods of the `Character` class
 Class `Characters` has a lot of [methods](https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Character.html). 
 You can use one of them to check if a character is a letter.
 

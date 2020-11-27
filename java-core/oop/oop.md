@@ -14,7 +14,7 @@ Improved example:
 Animal fluffy = new Cat();
 Animal oscar = new Dog();
 ```  
-#### Depends on the case, class elements should have different access modifiers
+#### Depending on the case, class elements should have different access modifiers
 Remember that if you don't use any access modifiers that will apply the default one. Do we always want
 to have all elements with default access modifiers? Remind yourself about encapsulation principle and 
 when private or public should be used.

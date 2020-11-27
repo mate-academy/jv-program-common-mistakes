@@ -8,7 +8,7 @@ different parts of our code.
 If you copy an object of class `Car` with field `Engine` inside - keep in mind that `engine` may have non-primitive fields
 on its own. So how will they be copied?  What influence does it make on our `car` copy? Is it deep or shallow?
 
-#### Your method in the class should have clear and logical structure
+#### Your methods in the class should have clear and logical structure
 Your class should have a clear readable structure and order of elements. Generally, order
 class methods by functionality, meaning if you have several methods that are involved in completing 
 a common task they should be located near to each other independently of their accessibility.  
