@@ -1,6 +1,6 @@
 ### Common mistakes
 
-#### Using specific reference when you can use more abstract: 
+#### Use abstract reference instead of specific one where possible: 
 ```
 Bad example:
 Cat fluffy = new Cat();
@@ -14,7 +14,7 @@ Improved example:
 Animal fluffy = new Cat();
 Animal oscar = new Dog();
 ```  
-#### Ignoring access modifiers for you class and class members
+#### Depends on the case, class elements should have different access modifiers
 Remember that if you don't use any access modifiers that will apply the default one. Do we always want
 to have all elements with default access modifiers? Remind yourself about encapsulation principle and 
 when private or public should be used.

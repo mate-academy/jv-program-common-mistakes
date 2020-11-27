@@ -6,19 +6,19 @@ And it's important for you to remember that one method should be responsible for
 
 For example: "write to file" or "create report" - are a separate operations. So we should create separate methods for them.
 
-#### Method naming convention
+#### Stick to method naming convention
 Correct [method names](https://mate-academy.github.io/style-guides/java/java.html#s5.2.3-method-names) is first step to pure code.
 
 #### Remember about informative name of the variables
 
-#### Using StringBuilder instead of String to concat data
+#### Use StringBuilder instead of String to concat data
 Keep in mind that String concatenation creates many new objects that take up a lot of memory.
 
-#### Constants
+#### Use constants
 If you have strange strings or numbers in the code, it's better to declare them as constants.
 The name of the constant should display this object's purpose.
 
-#### Using public access modifiers everywhere
+#### Pay attention to access modifiers, they should not always be `public`
 If the method has only a utility purpose and is used only inside the same class, it should not be 
 `public`. Keep your code as close as possible to follow the encapsulation principle.
 

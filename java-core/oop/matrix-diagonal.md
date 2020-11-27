@@ -1,11 +1,11 @@
 ### Common mistakes
 
-#### Using nested for loop instead of single loop
+#### Use single loop instead of a nested one where possible
 Algorithms with nested loops require more computational resources comparing to the ones with single loop. 
 As a result you may receive performance degradation when overusing this approach. Always try to avoid nested 
 loops where possible.
 
-#### Ignoring checkstyle rules: 
+#### Follow checkstyle rules: 
 ```
 Bad practice:
 for(int i=0;i<array.length;i++){

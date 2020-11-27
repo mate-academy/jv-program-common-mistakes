@@ -1,14 +1,14 @@
 ### Common mistakes
 
-#### Ignoring encapsulation
+#### Follow encapsulation rule
 Remember to use access modifiers with all class elements. We should explicitly control the access level to 
 different parts of our code.
 
-#### Creating a shallow copy of object's field
+#### We're interested in creating deep copy
 If you copy an object of class `Car` with field `Engine` inside - keep in mind that `engine` may have non-primitive fields
 on its own. So how will they be copied?  What influence does it make on our `car` copy? Is it deep or shallow?
 
-#### Order of methods in your class
+#### Your method in the class should have clear and logical structure
 Your class should have a clear readable structure and order of elements. Generally, order
 class methods by functionality, meaning if you have several methods that are involved in completing 
 a common task they should be located near to each other independently of their accessibility.  

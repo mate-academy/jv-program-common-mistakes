@@ -1,14 +1,14 @@
-### Common mistakes
+### Points to remember
 
-#### Using private constructor of class 
+#### Use private constructor of class 
 If you use a builder pattern, make the outer class's constructor with a Builder input parameter private, not public, default or protected.
 We should hide it from users and forbid to pass Builder in parameters.
 
-#### Using getters in builder
+#### Don't use getters in builder
 You should not use getter in builder class, because it is internal class of Plane. 
 We will get data about Plane using plane's getters.
 
-#### Returning Builder object in Builder's setters.
+#### Return Builder object in Builder's setters.
 You should always return Builder object in Builder's setters. It helps to create different objects with different amount of parameters.
 ```
     Car firstCar = new Car().Builder() // car with model, color and year
