@@ -8,10 +8,10 @@ with commented code in it you will waste time analyzing its purpose and the reas
 
 #### Don’t complicate if-else construction. [Detailed explanation](https://www.youtube.com/watch?v=P-UmyrbGjwE&list=PL7FuXFaDeEX1smwnp-9ri8DBpgdo7Msu2)
 
-#### Be attentive about the class you extend to declare your exception
+#### Be attentive about the class you extend to declare your exception.
 Should it extend `RuntimeException` or `Exception` and why? (double check task description)
 
-#### Be attentive about exception with method signature
+#### Be attentive about exception with method signature.
 Should we use `throws` keyword with method `getUserScore()`? Let's think about it.
 
 #### Don’t create unneeded variables.
@@ -21,7 +21,7 @@ decrease code readability.
 
 #### Remember about informative name of the variables.
 
-#### Don't complicate your code with a lot of empty lines
+#### Don't complicate your code with a lot of empty lines.
 ```
 Bad example:
 public int add(int a, int b) {
@@ -41,3 +41,10 @@ public int add(int a, int b) {
 
 #### Don't hardcode the message in the exception class, pass it to constructor.
 Hardcoding reduces the flexibility of the code by forcing actual values into the source code.
+
+#### Any magic numbers should be constants
+Your code should be easy to read. Move all hardcoded values 
+to [constant fields](https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names) and give them informative names.
+For example: constants can be `email position in the array`, `score position in the array`.
+
+
