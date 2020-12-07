@@ -39,12 +39,10 @@ public int add(int a, int b) {
 }
 ```
 
-#### Don't hardcode the message in the exception class, pass it to constructor.
+#### Don't hardcode the message in the exception class, pass it to the constructor.
 Hardcoding reduces the flexibility of the code by forcing actual values into the source code.
 
 #### Any magic numbers should be constants
 Your code should be easy to read. Move all hardcoded values 
 to [constant fields](https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names) and give them informative names.
 For example: constants can be `email position in the array`, `score position in the array`.
-
-
