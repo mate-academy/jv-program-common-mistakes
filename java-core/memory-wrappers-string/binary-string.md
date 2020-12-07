@@ -5,6 +5,7 @@
 #### Use StringBuilder instead of String or StringBuffer.
 Since the String object is immutable, each call for concatenation will result in a new String object being created.
 On the other hand, StringBuilder is mutable and thus is considered to be a very efficient way to concatenate Strings.
+Compiler will replace concat with StringBuilder when we have simple code row but with a loops that won't work.
 
 #### Create your own implementation, don’t use any standard methods.
 

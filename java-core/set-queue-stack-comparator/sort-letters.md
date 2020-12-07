@@ -7,6 +7,7 @@ You can use one of them to check if a character is a letter.
 #### Use StringBuilder instead of String or StringBuffer.
 Since the String object is immutable, each call for concatenation will result in a new String object being created.
 On the other hand, StringBuilder is mutable and thus is considered to be a very efficient way to concatenate Strings.
+Compiler will replace concat with StringBuilder when we have simple code row but with a loops that won't work.
 
 #### Variable naming
 Incorrect naming may have significant impact on your code readability!  

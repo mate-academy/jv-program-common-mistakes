@@ -11,8 +11,9 @@ Correct [method names](https://mate-academy.github.io/style-guides/java/java.htm
 
 #### Remember about informative name of the variables
 
-#### Use StringBuilder instead of String to concat data
-Keep in mind that String concatenation creates many new objects that take up a lot of memory.
+#### Use StringBuilder instead of String to concat data in loops
+Keep in mind that String concatenation creates many new objects that take up a lot of memory if you use it inside 
+of a loop.
 
 #### Use constants
 If you have strange strings or numbers in the code, it's better to declare them as constants.
