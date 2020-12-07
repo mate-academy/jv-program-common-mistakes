@@ -18,6 +18,7 @@ without using these data structures. Let's do it manually.
 
 #### Use StringBuilder.
 You have learned in previous topics about different internal structure of `String` and `StringBuilder` don't forget to use it 
-on practice. What works better when we have multiple concatenation in our code?
+on practice. Keep in mind that String concatenation creates many new objects that take up a lot of memory if you use it inside 
+of a loop. Though it's safe to use it outside of a loop, because compiler will replace it with StringBuilder anyway  [java doc](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
 #### Remember about informative name of the variables.
