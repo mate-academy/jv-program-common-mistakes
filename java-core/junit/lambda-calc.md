@@ -1,7 +1,7 @@
 ### Common mistakes
 
 * Don’t ignore checkstyle rules.
-* Figure out which way is better to initialize your Calculator class instance: `@Before` or `@BeforeClass`, what’s the difference?
+* Figure out which way is better to initialize your Calculator class instance: `@BeforeEach` or `@BeforeAll`, what’s the difference?
 * Make sure you name your methods according to [convention](https://google.github.io/styleguide/javaguide.html#s5.2.3-method-names).
 * Add tests for each operation with different type of input params (positive values, negative values, zero etc) same goes for other operations.
 * You don’t need main method to see how your solution works, you have tests for this purpose.
