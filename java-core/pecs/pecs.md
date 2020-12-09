@@ -9,8 +9,8 @@ public class StringProducer implements MachineProducer<String> { }
 List<? extends Machine> machines = someProducer.get();
 return new ArrayList<>(machines);
 ```
-#### The size of a list passed to `fill()` method must double. 
-See the example implementation in the [video](https://www.youtube.com/watch?v=humASfXSA7c).
+#### The size of a list passed to `fill()` method should remain the same. 
+Just replace the old values with the new ones.
 #### Don’t forget about access modifiers for your custom fields in `Excavator`, `Truck` and `Bulldozer` classes.
 You should never want to expose the object fields directly. They should be accessed through special methods (getters and setters).
 #### Don’t remove no-args constructors in `Excavator`, `Truck` and `Bulldozer` classes.
