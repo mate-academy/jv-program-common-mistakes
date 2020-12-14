@@ -39,7 +39,7 @@ public class Square {
     }
     // `this` keyword usage is not necessary
     public int countArea() {
-        return this.width * this.width;
+        return width * width; // not `this.width * this.width`
     }
 }
 ```
