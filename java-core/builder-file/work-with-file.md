@@ -23,7 +23,7 @@ The name of the constant should display this object's purpose.
 If you are counting something in your method for example using some variable for the result, don't make this variable a class field.  
 The class fields should represent the state of the class objects otherwise they should be local variables.
 
-####try-with-resources
+#### try-with-resources
 Remember, if you are using classes that implement an AutoCloseable interface,
 we should use it with try-with-resources.
 
