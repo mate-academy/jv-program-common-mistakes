@@ -28,3 +28,18 @@ If not you may get unpredictable results especially while using your class with 
 #### Don't use methods of the Objects.class
 Objects.class can make this task a bit easier because you can delegate null checks to it, but I will strongly recommend you not to use it here. Our current task now is to understand how basic methods work inside of the box
 and why certain checks are important while writing your code.
+
+#### Use `this` keyword only when it's absolutely necessary
+```java
+public class Square {
+    public Integer width;
+    // necessary to use `this` keyword because of variable shadowing
+    public Square(Integer width) {
+        this.width = width;
+    }
+    // `this` keyword usage is not necessary
+    public int countArea() {
+        return width * width; // not `this.width * this.width`
+    }
+}
+```
