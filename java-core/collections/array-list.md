@@ -27,7 +27,8 @@ public class Shelf {
 ```
 #### Don’t complicate if-else construction. [Detailed explanation.](https://www.youtube.com/watch?v=P-UmyrbGjwE&list=PL7FuXFaDeEX1smwnp-9ri8DBpgdo7Msu2)
 #### Don’t create repeating code.
-If the logic of your code repeats - move it to the separate private method. 
+If the logic of your code repeats - move it to the separate private method. For example, the index check for `get()`, `set()` and `remove()` methods should be moved to the separate method.
+
 There is even a software design principle called [DRY](https://dzone.com/articles/software-design-principles-dry-and-kiss) that urges not to repeat yourself.
 #### Don’t create redundant variables.
 Redundant variables are confusing and make your code less clean and much more difficult to read. Not to mention they occupy stack memory.
