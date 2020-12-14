@@ -1,6 +1,6 @@
 ### Common mistakes
 
-#### If you create a [formatter](https://bit.ly/34cSQAp), make it a constant field.
+#### If you create a [formatter](https://www.examclouds.com/ru/java/java-core-russian/format-date-java8), make it a constant field.
 If you create a formatter, make it a [constant](https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names).
 That will make your code easier to understand. Plus if you use it in several places in your code 
 you will be able to change its value easily with one action(change variable declaration). In other case you need to update
