@@ -34,5 +34,5 @@ You should never want to expose the object fields directly. They should be acces
 #### If you tested in `main()`, don’t forget to remove it as well as all commented code.
 #### Don’t forget that you can have `null` as a method parameter in `remove(T object) method`.
 #### Don't iterate your nodes from the head to tail or vice versa.
-Pay attention to the index you receive as an input, you can iterate only first or second half of the list
-to find needed value. That will boost you lists' performance.
+Pay attention to the index you receive as an input, you can iterate only first or second half of the list, 
+depending on the index value. That will boost your lists' performance.
