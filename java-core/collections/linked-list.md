@@ -37,5 +37,5 @@ You should never want to expose the object fields directly. They should be acces
 Pay attention to the index you receive as an input, you can iterate only first or second half of the list, 
 depending on the index value. That will boost your lists' performance.
 #### Create a separate method unlink(Node node)
-This logic is will be used in 2 methods: when we remove by index and by value. Let's create method that will take Node 
+This logic will be used in 2 methods: when we remove from list by index and by value. So let's create a method that will take a Node 
 that needs to be removed and unlink it. As a result we will call it from both methods when Node is found.
