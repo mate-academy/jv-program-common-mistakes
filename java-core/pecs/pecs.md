@@ -14,6 +14,9 @@ Just replace the old values with the new ones.
 You should never want to expose the object fields directly. They should be accessed through special methods (getters and setters).
 #### Don’t remove no-args constructors in `Excavator`, `Truck` and `Bulldozer` classes.
 They will be needed to run the test.
-#### Don't return null in getAll when no producer found.
+#### Don't return null or specific type List in `getAll()` when no producer has been found.
 Returning null is considered to be a bad practice: a user of your method needs to write additional null checks when 
 using it. In other cases NPE might appear. Instead it's better to return empty List. 
+#### Keep if else constructions simple
+Do we need else after return in if clause? 
+If not let's not make our code longer unnecessary
