@@ -17,3 +17,8 @@ If the method has only a utility purpose and is used only inside the same class,
 
 #### Remember about access modifiers.
 All fields and methods should have access modifiers. Remember about the encapsulation principle.
+
+#### Diamond operator
+Be attentive with diamond operator in java. 
+What is the difference between: `new Node<>(...)` and `new Node<K,V>(...)`and `new Node(...)`. 
+Read more about it [here](https://www.baeldung.com/java-diamond-operator)
