@@ -16,6 +16,7 @@ Don't leave `e.printStackTrace()` or `System.out.println(e.getMessage())` at the
 Let's rethrow a RuntimeException() with informative message and exception object.
 
     Good:
+    
     ```
     } catch (FileNotFoundException e) {
         throw new RuntimeException("Can't find file by path: " + filePath, e);
@@ -49,11 +50,13 @@ Let's create `main()` to show how the program works.
     }
     ```
 * Use the absolute path to a resource: Everyone who pulls your project should be able to run it. Please provide the relative path to a resource instead.  
-    Bad:  
+    Bad:
+      
     ```
     readFromFile("C:/Users/.../my-project/src/main/resources/file.txt");
     ```  
     Good:
+    
     ```
     readFromFile("src/main/resources/file.txt");
     ```
@@ -71,6 +74,7 @@ or run `mvn clean verify` in the terminal.
 Create a corresponding test class for each class you test. Do not test logic of whole program in one test class.
 That's important for code readability.
     Example:  
+    
     ```  
     CsvFileService -> CsvFileServiceTest  
     FruitService -> FruitServiceTest  
@@ -82,7 +86,8 @@ Your task is to include edge cases apart from regular method use case. But we wa
 no need to cover `Main` class with tests. You can exclude Main class with `main()` method from check for code coverage in pom.xml.   
 __Example__: find the following code in the pom.xml and change `Main` according to your 
     class naming where you have your `main()` method.  
-    ```  
+    
+    ```
     <configuration>  
         <excludes>  
             <exclude>**/Main*</exclude>  
