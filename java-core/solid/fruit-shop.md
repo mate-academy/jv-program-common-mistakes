@@ -3,15 +3,15 @@
 __first part__
 
 #### Follow SOLID rules
-Please design your classes according to the SOLID principles. Make your classes are simple, reusable and focused on a single problem.
+Please design your classes according to the SOLID principles. Make your classes simple, reusable and focused on a single problem.
 In this case you will save a lot of time when you need to add/modify existing functionality in the future.
 #### Don't keep all logic in a single package
 You can use packages to make the structure of the code better, so let's do it. Gather classes with same 
  purpose/common logic in a corresponding package.
 #### VSC usage
-Remember about informative commit and PR naming. Person that is outside of your work progress should understand
+Remember about informative commit and PR naming. Person that is outside of context of your work progress should understand
 what feature/functional you have added.
-### Don't ignore exceptions in try-catch blocks
+#### Don't ignore exceptions in try-catch blocks
 Don't leave `e.printStackTrace()` or `System.out.println(e.getMessage())` at the catch blocks. 
 Let's rethrow a RuntimeException() with informative message and exception object.
 
@@ -29,17 +29,17 @@ the most suitable for your needs.
 #### Show how your solution works
 Let's create `main()` to show how the program works.
 #### Avoid hardcode in your solution
-* Use hardcoded values only in the Main class and/or test classes.
-    Bad:
-    ```
+* Use hardcoded values only in the Main class and/or test classes.  
+    Bad:  
+    ```  
     public class FileService {
         public void readFromFile() {
             File file = new File("src/main/resources/file.txt");
             ...
         }
     }
-    ```
-    Good:
+    ```  
+    Good:   
     ```
     public class FileService {
         public void readFromFile(String filePath) {
@@ -66,27 +66,27 @@ __second part__
 Ensure you have covered at least 80% of code with tests. That will decrease a chance of getting unexpected behaviour 
 after software release and during maintenance stage.
 You can check this requirement by `running your tests with coverage` (see this [tutorial](https://www.loom.com/share/85886cc0b3c9458a8b5c0d5af9bf4720))
-or run `mvn clean verify` at the terminal.
+or run `mvn clean verify` in the terminal.
 #### Don't keep all tests in a single class
-Create a corresponding test class for each class. Do not test logic of whole program in one test class.
+Create a corresponding test class for each class you test. Do not test logic of whole program in one test class.
 That's important for code readability.
-    Example:
-    ```
-    CsvFileService -> CsvFileServiceTest
-    FruitService -> FruitServiceTest
-    ...
-    ```
-Same goes for files that you use in tests, let's save them into folder: `src/test/resources/[your-files.csv]`
+    Example:  
+    ```  
+    CsvFileService -> CsvFileServiceTest  
+    FruitService -> FruitServiceTest  
+    ...  
+    ```  
+Same goes for files that you use in tests, let's save them into folder: `src/test/resources/[your-files.csv]`   
 #### Try to cover different scenarios in tests
-Your task is to include edge cases apart from regular method work. But we want to test only business logic,
+Your task is to include edge cases apart from regular method use case. But we want to test only business logic,
 no need to cover `Main` class with tests. You can exclude Main class with `main()` method from check for code coverage in pom.xml.   
 __Example__: find the following code in the pom.xml and change `Main` according to your 
-    class naming where you have your `main()` method.
-    ```
-    <configuration>
-        <excludes>
-            <exclude>**/Main*</exclude>
-        </excludes>
-    </configuration>
-    ```
-After all tests have passed you can send your solution)
+    class naming where you have your `main()` method.  
+    ```  
+    <configuration>  
+        <excludes>  
+            <exclude>**/Main*</exclude>  
+        </excludes>  
+    </configuration>  
+    ```  
+After all tests have passed you can send your solution)  
