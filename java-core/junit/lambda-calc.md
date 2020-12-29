@@ -11,6 +11,6 @@
 assertThrows(ExpectedException.class, () -> object.methodUnderTest(inputParams);
 ```
 * Try to avoid complex if else and switch case constructions that will make your code less flexible.
-* Don't forget about proper access modifiers in your classes and in all of theirs attributes(tests too).
+* Don't forget about proper access modifiers for your classes and for all of their components (this applies to test classes as well).
 * Don’t return null when you receive an unexpected operator, it’s a bad practice. Let’s throw an exception.
 * Check your code for coverage with tests, expected coverage should be 90%+. [How to run](https://www.jetbrains.com/help/idea/running-test-with-coverage.html#run-config-with-coverage)
