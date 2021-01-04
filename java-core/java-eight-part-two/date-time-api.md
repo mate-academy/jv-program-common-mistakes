@@ -22,4 +22,4 @@ even withing one execution, but this not one of those.
 Before start date-parsing, better check if the input string is correct. 
 So let's create a class `DateValidator` with a method 
 `isValid(String dateString, DateTimeFormatter dateFormatter)` that will return true/false.
-[Read more](https://www.baeldung.com/java-string-valid-date).                                                                                
+[Read more](https://www.baeldung.com/java-string-valid-date#localdate).                                                                                
