@@ -27,6 +27,7 @@ the most suitable for your needs.
 #### Make your services independent and show how your solution works
 Let's create `Main` class with `main()` method to show how the program works. Make your services independent
 and call them in the right order in `main()` method.
+#### Place the input and output files into the `src/main/resources` folder.
 #### Avoid hardcode in your solution
 * Use hardcoded values only in the Main class and/or test classes.  
     
@@ -49,7 +50,8 @@ public class ReaderServiceImpl implements ReaderService {
 }
 ```
 
-* Do not use the absolute path to a resource. Everyone who pulls your project should be able to run it. Please provide the relative path to a resource instead. 
+* Do not use the absolute path to a resource. Everyone who pulls your project should be able to run it. 
+Please provide the relative path to a resource instead. 
  
 Bad:  
 ```java
