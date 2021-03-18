@@ -1,0 +1,12 @@
+# HW 03
+
+* Make sure you are creating a new branch before start working. 
+* Don't add `<dependencies>` block into your `pom.xml` if you are not using dependencies at the moment.
+* Run __`mvn clean package`__ after finish homework and before checking.
+* Use wrapper for id: `Long id` but not `long id`. And remember what is the difference between `==` and `equals`.
+* Try using Stream API where needed.
+* Method `findFirst()` return Optional, so you should not use `Optional.ofNullable` anywhere.
+* `find()` methods in Dao layer should return `Optional` (not in services). In the service layer better call method `get()` on Optional and return the object.
+* You should not have any additional logic on Dao layer except managing database operations. All business logic must be on service layer.
+* Money transfer is a double-sided process. Think about it.
+* It's impossible to withdraw more money than you have on your account.
