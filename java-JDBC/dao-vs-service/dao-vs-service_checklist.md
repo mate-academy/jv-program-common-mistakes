@@ -1,8 +1,7 @@
 # HW 03
 
 * Make sure you are creating a new branch before start working. 
-* Don't add `<dependencies>` block into your `pom.xml` if you are not using dependencies at the moment.
-* Run __`mvn clean package`__ after finish homework and before checking.
+* Run __`mvn clean package`__ after finish homework and before sending the solution.
 * Use wrapper for id: `Long id` but not `long id`. And remember what is the difference between `==` and `equals`.
 * Try using Stream API where needed.
 * Method `findFirst()` return Optional, so you should not use `Optional.ofNullable` anywhere.
