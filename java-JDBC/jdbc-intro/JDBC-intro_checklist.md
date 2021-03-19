@@ -102,5 +102,3 @@
 ```           
 
 * Don't return `null`. Let's throw exception instead!
-
-* Let's configure [travis ci](https://www.youtube.com/watch?v=BHSsWTbuow4). 

@@ -8,5 +8,3 @@
 * Method `findFirst()` return Optional, so you should not use `Optional.ofNullable` anywhere.
 * `find()` methods in Dao layer should return `Optional` (not in services). In the service layer better call method `get()` on Optional and return the object.
 * You should not have any additional logic on Dao layer except managing database operations. All business logic must be on service layer.
-* Money transfer is a double-sided process. Think about it.
-* It's impossible to withdraw more money than you have on your account.
