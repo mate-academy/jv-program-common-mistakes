@@ -1,5 +1,27 @@
 ### Common mistakes
 
+#### Please don't add redundant empty lines to your code.
+We don't need them after class declaration or method signature.
+```
+Bad example:
+
+public class Main {
+
+    public static void main(String[] args) {
+    
+        System.out.println("Hello world!");
+    }
+}
+```
+```
+Improved example:
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+    }
+}
+```
 #### Use abstract reference instead of specific one where possible: 
 ```
 Bad example:
