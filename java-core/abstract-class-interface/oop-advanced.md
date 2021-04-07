@@ -58,3 +58,7 @@ Returning `null` from a method is a bad practice. If you use switch-case in your
 #### Use only eng in messages/code:
 Try not to use ukr/ru messages in `toString()` or `System.out.println()` statements.
 We want to make our code universal and consistent.
+
+#### Write informative messages when you commit code or open a PR.
+         
+Bad example of commit/PR message: `done`/`fixed`/`commit`/`solution`/`added homework`/`my solution` and other one-word, abstract or random messages. 

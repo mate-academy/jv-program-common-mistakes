@@ -21,4 +21,8 @@ You have learned in previous topics about different internal structure of `Strin
 on practice. Keep in mind that String concatenation creates many new objects that take up a lot of memory if you use it inside 
 of a loop. Though it's safe to use it outside of a loop, because compiler will replace it with StringBuilder anyway  [java doc](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
-#### Remember about informative name of the variables.
+#### Remember about informative names of the variables.
+
+#### Write informative messages when you commit code or open a PR.
+         
+Bad example of commit/PR message: `done`/`fixed`/`commit`/`solution`/`added homework`/`my solution` and other one-word, abstract or random messages. 
