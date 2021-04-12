@@ -27,6 +27,11 @@ The class fields should represent the state of the class objects otherwise they 
 Remember, if you are using classes that implement an AutoCloseable interface,
 we should use it with try-with-resources.
 
+#### Don't open nested connection to files
+Avoid opening connection to file in try block inside of another try block. 
+We should keep opened connection to resource as short as possible. In code if you need to 
+read and write to different files - do this in separate try blocks that are not located inside each other.
+
 #### Pay attention to access modifiers, they should not always be `public`
 If the method has only a utility purpose and is used only inside the same class, it should not be 
 `public`. Keep your code as close as possible to follow the encapsulation principle.
