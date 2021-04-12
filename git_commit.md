@@ -3,7 +3,7 @@
 General recommmendation - let's write meaningful commit messages.
 
 Imagine that you read your code in two months. I bet you won't understand exactly what you did in your committee. 
-Or, imagine how "convenient" it would be to read code in which more than 100k commit. 
+Or, imagine how "convenient" it would be to read code in which there is more than 100k commits. 
 For example, in the [TensorFlow framework](https://github.com/tensorflow/tensorflow/commits/master) from Google (designed for ML and contains more than 2 million lines of code)
 
 Bad naming examples
