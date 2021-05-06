@@ -1,7 +1,6 @@
 # HW-02
 
 * Don't just copy paste code from other dao ( make sure your exception messages and variable names are correct for particular class)
-* Don't add alfa version of dependencies, they might work unpredictable and cause problems
 * :exclamation: You don’t need to set id for your entity explicitly. It'll be done by Hibernate;
 * Don’t add dependencies that you don't use to pom.xml;
 * Don't add alfa version of dependencies, they might work unpredictable and cause problems
