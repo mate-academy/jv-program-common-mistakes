@@ -1,4 +1,4 @@
-# HW-02
+# Common mistakes
 
 * Don't just copy paste code from other dao (make sure your exception messages and variable names are correct for particular class.
 * :exclamation: You don’t need to set id for your entity explicitly. It'll be done by Hibernate.
