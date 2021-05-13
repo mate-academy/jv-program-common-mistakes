@@ -15,8 +15,6 @@ Good:
     }
 ````
 
-* Remember about informative variable names. WRONG: cb, q, criteria...
-
 * Don’t create redundant variables.
 
 * Use `entrySet()` instead of `keySet()` if you use only one `for` loop.
