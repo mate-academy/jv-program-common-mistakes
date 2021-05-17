@@ -5,9 +5,11 @@
 
 * Remember that we can't do next operations on deleted manufacturers: get(), getAll(), update().
 
-* Let's use TRUE/FALSE instead of 1/0 with `deleted` column in the sql queries.
+* Let's use TRUE/FALSE instead of 1/0 with `is_deleted` column in the sql queries.
 
 * Don't make `manufacturers.name` UNIQUE.
+
+* When creating a table in MySQL, use `bigint` column type for storing id.
 
 * Use `if` or `while` with `resultSet.next()`. Don't do it without checking,
   because the result can be `null` and you will get a NPE after trying to get a value from `resultSet`.
@@ -30,7 +32,7 @@
     ```
 
 * Don't return `true` all the time in the method `delete`.
-  Let's return boolean value depending on preparedStatement.executeUpdate() [result](https://docs.oracle.com/javase/7/docs/api/java/sql/Statement.html#executeUpdate(java.lang.String)).
+  Let's return boolean value depending on `preparedStatement.executeUpdate()` [result](https://docs.oracle.com/javase/7/docs/api/java/sql/Statement.html#executeUpdate(java.lang.String)).
 
   Example:
   ```
@@ -38,6 +40,7 @@
         int updatedRows = preparedStatement.executeUpdate();
         return updatedRows > 0;
   ```
+  Better not use `updatedRows == 1`, `updatedRows >= 1` - the example above, that uses comparison with `0`, is more flexible.
 
 * Let's save each query in a separate variable.
     ```
@@ -78,7 +81,7 @@
     - So let's close PreparedStatement as well as Connection (use try with resources for that).
 
 
-* Use informative message of exceptions.
+* Use informative messages for exceptions.
     ```
         Wrong:
             throw new DataProcessingException("Can't get manufacturer", e);
@@ -90,8 +93,6 @@
 
 * Add an empty line at the end of all files.
 
-* Let's remove all comments from `pom.xml`.
-
 * Don't use schema's name in your queries, cause you are configuring it while establishing a connection with DB.
 ```sql     
        Wrong:
@@ -100,5 +101,3 @@
        Good:
         SELECT * FROM manufacturers WHERE id = 1;
 ```           
-
-* Don't return `null`. Let's throw exception instead!
