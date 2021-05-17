@@ -4,7 +4,7 @@
 * Custom `AuthenticationException` shouldn’t be `RuntimeException`.
 * `findByEmail()` - don’t complicate with unnecessary variables, expect to receive only one String param 
   in method arguments.
-* `findByEmail()` - return Optional.
+* `findByEmail()` - should return Optional on Dao layer.
 * In `findByEmail()` method you can use `uniqueResultOptional()` method to retrieve User from Query.
 * Create only one condition for throwing `AuthenticationException` in `login()` method. You may combine two checks: 
   whether the user has been found by login and does passwords match.
