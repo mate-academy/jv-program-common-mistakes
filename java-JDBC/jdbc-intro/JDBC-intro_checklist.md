@@ -13,6 +13,8 @@
 
 * Use `if` or `while` with `resultSet.next()`. Don't do it without checking,
   because the result can be `null` and you will get a NPE after trying to get a value from `resultSet`.
+  
+* Use `PreparedStatement` over `Statement`, even for a static query with no parameters in `getAll()` method. It's the best practice, and it's slightly faster.
 
 * Column naming:
     ```
