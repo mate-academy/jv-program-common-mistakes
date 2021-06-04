@@ -24,7 +24,7 @@ public class Main {
 ```
 
 #### Write informative messages in methods.
-Use only eng in message and make them informative:
+Use english only and make them informative:
 message should indicate what type of `Machine` is working right now `Truck`, `Bulldozer` or `Excavator`.
 
 #### Use abstract reference instead of specific one where possible: 
