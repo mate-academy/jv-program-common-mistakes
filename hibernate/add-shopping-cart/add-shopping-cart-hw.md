@@ -20,4 +20,4 @@ The reason is that `ShoppingCart` object will have the `transient` state before 
 1. Don't join `user` inside your query in the method `getByUser()`, it should work just fine without it. You can still join other entities.
 1. Try to think what should be called first `userService.add(user)` or `registerNewShoppingCart()`.
 1. Try to think what should you do first in method `addSession`: 
-`ticketDao.add(ticket);` or `ShoppingCart shoppingCart = shoppingCartDao.getByUser(user);`
+`ticketDao.add(ticket);` or `shoppingCartService.update()`
