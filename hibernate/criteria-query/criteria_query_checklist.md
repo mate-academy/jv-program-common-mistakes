@@ -1,19 +1,20 @@
 # Common mistakes
 
 * Check all your exceptions:
-```
-Wrong:
-    } catch (Exception e) {
-        ...
-        throw new RuntimeException("Can't create phone");
-    }
+  
+    ```
+        Wrong:
+         } catch (Exception e) {
+            ...
+            throw new RuntimeException("Can't create phone");
+         }
     
-Good:
-    } catch (Exception e) {
-        ...
-        throw new RuntimeException("Can't create phone " + phone, e);
-    }
-```
+        Good:
+         } catch (Exception e) {
+            ...
+            throw new RuntimeException("Can't create phone " + phone, e);
+         }
+    ```
 
 * Don’t create redundant variables.
 
