@@ -7,7 +7,7 @@
   For example: `get...`, `put...`, `create...`. Be careful with methods in class `WebConfig`.
 * Better use `@GetMapping` instead of `@RequestMapping(value = "/url", method = RequestMethod.GET)` with methods.
   `@GetMapping` is newer and shorter annotation.
-* It is a bad practice to use a URL with type of operation. [Best Practices](https://restfulapi.net/resource-naming/).
+* It is a bad practice to use a URL with a type of operation. You should depend on the HTTP method type when implementing endpoints. [Best Practices](https://restfulapi.net/resource-naming/).
 ```
     Wrong:
        URL = "/get/{id}"
