@@ -1,4 +1,4 @@
-#Spring Security
+# Spring Security
 
 1. Be careful with CustomGlobalExceptionHandler. Let's use `getAllErrors()` instead of `getFieldErrors()`.
 1. Don't forget to add `SecurityConfig.class` in `MyWebAppInitializer` -> `getRootConfigClasses()`.
