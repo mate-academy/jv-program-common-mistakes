@@ -35,3 +35,8 @@ Collection.stream()
         .filter(new CustomPredicate());
         ...
 ```
+
+#### In method `findMinEvenNumber()` exception message should look like this:
+```
+"Can't get min value from list: " + numbers
+```
