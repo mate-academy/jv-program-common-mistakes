@@ -6,7 +6,7 @@
 #### If you create a formatter/use custom timezone, make it a constant field. Remember about informative names and `private` access modifiers.
 
 #### Avoid magic numbers in your code.
-They are should be constants.
+They should be constants.
 
 #### Avoid calling LocalDate.now multiple times in one method. Let's create a variable in the method for this purpose.
 LocalDate.now() gives us a different result if the next day has come. Of course, your code won't run 
