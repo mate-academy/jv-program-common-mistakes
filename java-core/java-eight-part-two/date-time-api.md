@@ -16,10 +16,4 @@ P.S. of course there are some cases when you need the strict current time in eac
 even withing one execution, but this not one of those.
 
 #### Before creating your own formatter, check out whether it is already defined in `DateTimeFormatter` class.
-[Documentation](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html)
-
-#### Let's create a validator for tasks `parseDate()` and `customParseDate()`
-Before start date-parsing, better check if the input string is correct. 
-So let's create a class `DateValidator` with a method 
-`isValid(String dateString, DateTimeFormatter dateFormatter)` that will return true/false.
-[Read more](https://www.baeldung.com/java-string-valid-date#localdate).                                                                                
+[Documentation](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html) 
