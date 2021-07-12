@@ -29,8 +29,9 @@ Please see [this article](https://mate-academy.github.io/style-guides/java/java.
 Bad example:
 
 public class FigureSupplier {
+    private Random random = new Random();
+
     public Figure getRandomFigure() {
-        Random random = new Random();
         int `figureNumber` = random.nextInt(5);
         // generate a specific figure based on the `figureNumber` value
     }
@@ -41,9 +42,9 @@ Improved example:
 
 public class FigureSupplier {
     public static final int FIGURE_COUNT = 5;
+    private Random random = new Random();
 
     public Figure getRandomFigure() {
-        Random random = new Random();
         int figureNumber = random.nextInt(FIGURE_COUNT);
         // generate a specific figure based on the `figureNumber` value
     }
