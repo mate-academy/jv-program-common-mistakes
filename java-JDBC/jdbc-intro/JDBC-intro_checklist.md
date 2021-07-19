@@ -22,6 +22,7 @@
     
     Good: manufacturers.name
     ```
+* Don't use `Statement.RETURN_GENERATED_KEYS` only in `create` statement, it's not needed in other methods.
 
 * Be attentive with:
     ```
@@ -69,10 +70,6 @@
             }
     ```
 
-* `e.printStackTrace()` - is a bad practice! Let's create custom exception `DataProcessingException`
-  and constructor with two parameters: `String message` and `Throwable ex`.  
-  It should be extended from `RuntimeException`. You should rethrow this exception in `catch` block on dao layer.
-
 * Best practices with closing Connections and/or PreparedStatements
     - You have to close the PreparedStatement after you're done with it and before you create a new one on the same connection.
     - Generally, when you close the connection it automatically closes the statement.
@@ -92,8 +89,6 @@
             throw new DataProcessingException("Can't get manufacturer by id " + id, e);
             throw new DataProcessingException("Can't insert manufacturer " + manufacturer, e);
     ``` 
-
-* Add an empty line at the end of all files.
 
 * Don't use schema's name in your queries, cause you are configuring it while establishing a connection with DB.
 ```sql     
