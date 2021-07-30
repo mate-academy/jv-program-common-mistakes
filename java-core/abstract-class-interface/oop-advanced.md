@@ -53,6 +53,16 @@ public class FigureSupplier {
 #### Don't use static methods in your solution
 Static methods are in general a bad practice. Let's better create an instance of a class which method you want to call.
 
+#### Don't extend your `Main/Application` class from `FigureSupplier` or `ColorSupplier`.
+To be able to call non-static method, we just need to create an instance of the class: 
+```
+FigureSupplier figureSupplier = new FigureSupplier();
+Figure randomFigure = figureSupplier.getRandomFigure();
+```
+
+#### You should create several random Figures, so you will use a loop. Please don't create a `new FigureSupplier()` inside the loop.
+Let's do it only once - before the loop starts.
+
 #### Don't return `null` from a method.
 Returning `null` from a method is a bad practice. If you use switch-case in your solution, you may just put the last possible option in the `default` case.
 
@@ -61,5 +71,4 @@ Try not to use ukr/ru messages in `toString()` or `System.out.println()` stateme
 We want to make our code universal and consistent.
 
 #### Write informative messages when you commit code or open a PR.
-         
 Bad example of commit/PR message: `done`/`fixed`/`commit`/`solution`/`added homework`/`my solution` and other one-word, abstract or random messages. 
