@@ -5,6 +5,7 @@
 * `findByEmail()` - don’t complicate with unnecessary variables, expect to receive only one String param 
   in method arguments.
 * `findByEmail()` - should return Optional on both Dao and Service layers.
+* Instead of `password.lenght() == 0` or `password.equals("")` use `isEmpty()` method of String class.
 * In `findByEmail()` method you can use `uniqueResultOptional()` method to retrieve User from Query.
 * Create only one condition for throwing `AuthenticationException` in `login()` method. You may combine two checks: 
   whether the user has been found by login and does passwords match.
