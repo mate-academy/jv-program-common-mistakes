@@ -1,6 +1,8 @@
 # REST Web Practice
 
 * Don't make mistakes mentioned in previous [checklist](https://mate-academy.github.io/jv-program-common-mistakes/java-spring/rest/jv-spring-rest_checklist).
+* Be attentive with ShoppingCartController. We should use PUT HTTP, not POST when adding a movie session.
+* Don't create redundant dtos and mappers for them.
 * What do we need to use in AuthenticationController to create User: UserService or AuthenticationService?
 * Be careful which mapping should be class-level and which method-level:
 
