@@ -46,3 +46,6 @@ catch (Exception e) {
 
 #### Don’t create redundant variables.
 Let's make your code simple and easy to read. So better avoid using redundant variables.
+
+#### Use System.lineSeparator() insted `\n`
+[explanation](https://www.geeksforgeeks.org/system-lineseparator-method-in-java-with-examples/)
