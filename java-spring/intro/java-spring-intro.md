@@ -7,4 +7,5 @@
 5. Use `try-finally` when you work with transaction and `try-with-resources` with read operations.
 7. Check if you've put correct access modifiers everywhere.
 8. What is better: setter, constructor, or field injection? Think why.
-9. Use informative variable names.
+9. You should write `@Autowired` annotation above the constructor everywhere or nowhere, the code style should be uniform.   
+10. Use informative variable names.
