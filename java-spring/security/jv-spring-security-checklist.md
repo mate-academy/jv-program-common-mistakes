@@ -11,7 +11,7 @@
 1. Remember, that `null.equals(smth)` == NPE. HINT: be careful with implementation of the `isValid()` method.
 1. Don't repeat checks for fields: you must ensure `email` field not to be null in your custom Validator, so there is no need to put `@NotNull` for that field as well in Dto class.
 1. Can we use `@NotNull` annotation above the field with primitive data types? Be careful to use only the suitable annotations :)
-1. Use `@Autowired` with `PasswordEncoder` in `UserServiceImpl` if you don't use the constructor.
+1. Don't create PasswordEncoder using new keyword. Let's use dependency injection by the constructor.
 1. Don't change `findByEmail()` method in UserController - this method is supposed to return info about any user.
 1. Be sure you have the `@Valid` annotation in your controllers for the validation to take effect.
 1. Your custom constraints should have the obligatory parameters: `group()` and `payload()`.
