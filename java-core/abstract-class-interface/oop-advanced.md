@@ -50,6 +50,13 @@ public class FigureSupplier {
     }
 }
 ```
+#### Сreating a figure, don't pass expressions in constructor. 
+Сreate separate variables and pass them for better code readability.
+```
+Bad example:
+
+Square square = new Square(random.nextInt(10) + 1);
+```
 #### Don't use static methods in your solution
 Static methods are in general a bad practice. Let's better create an instance of a class which method you want to call.
 
