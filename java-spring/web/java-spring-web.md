@@ -28,6 +28,5 @@
             new AnnotationConfigApplicationContext(AppConfig.class);
     private UserService userService = context.getBean(UserService.class);
 ```
-* You should write `@Autowired` annotation above the constructor everywhere or nowhere, the code style should be uniform.
 * Don't push jsp file, jsp dependencies, hello controller and `InternalResourceViewResolver resolver()` bean to PR.
 * Run checkstyle and fix code style issues.
