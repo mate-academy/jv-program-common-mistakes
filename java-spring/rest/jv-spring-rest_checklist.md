@@ -14,7 +14,13 @@ add `jackson-datatype-jsr310` dependency to be able to parse it into MovieSessio
 Bad example:
 ```
 public MovieResponseDto createMovie(@RequestBody MovieRequestDto movieRequestDto) { ... } 
-// better just use `create()`
+
+public List<MovieResponseDto> getAll() { ... }
+```
+
+Good example:
+```
+public MovieResponseDto create(@RequestBody MovieRequestDto movieRequestDto) { ... } 
 
 public List<MovieResponseDto> getAll() { ... }
 ```
@@ -22,7 +28,13 @@ public List<MovieResponseDto> getAll() { ... }
 Another bad example for mapper:
 ```
 public CinemaHallResponseDto parse(CinemaHall cinemaHall) { ... }
-// better use `parse()` name for both methods or `toDto()` for this method
+
+public CinemaHall toModel(CinemaHallRequestDto cinemaHallRequestDto) { ... }
+```
+
+Good example:
+```
+public CinemaHallResponseDto toDto(CinemaHall cinemaHall) { ... }
 
 public CinemaHall toModel(CinemaHallRequestDto cinemaHallRequestDto) { ... }
 ```
