@@ -27,3 +27,5 @@ Bad naming:
 Good naming: 
     T[] stack;
 ```  
+#### Use annotation @SuppressWarnings("unchecked")
+Suppressing the warning with @SuppressWarnings("unchecked") tells the compiler that the programmer believes the code to be safe and won't cause unexpected exceptions.
