@@ -44,3 +44,5 @@ catch (Exception e) {
     throw new RuntimeException("Can't read data from the file " + fileName, e);
 }
 ```
+#### Disable wildcard imports to always import single classes
+[How to do it.](https://www.jetbrains.com/help/idea/creating-and-optimizing-imports.html#disable-wildcards-for-class)
