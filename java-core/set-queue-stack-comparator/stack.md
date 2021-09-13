@@ -27,5 +27,11 @@ Bad naming:
 Good naming: 
     T[] stack;
 ```  
-#### Use annotation @SuppressWarnings("unchecked")
+#### If your implementation is based on an array, use annotation `@SuppressWarnings("unchecked")` if test failed with error: `uses unchecked or unsafe operations`
 Suppressing the warning with @SuppressWarnings("unchecked") tells the compiler that the programmer believes the code to be safe and won't cause unexpected exceptions.
+```
+Example:
+@SuppressWarnings("unchecked")
+public class Stack<T> {
+}
+``` 
