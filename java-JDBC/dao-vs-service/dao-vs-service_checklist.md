@@ -1,6 +1,6 @@
 # HW 03
 
-* Make sure you are creating a new branch before start working.
+* Make sure you are creating a new branch before start working. 
 * Run __`mvn clean package`__ after finish homework and before sending the solution.
 * Use `PreparedStatement` over `Statement`, even for a static query with no parameters in `getAll()` method. It's the best practice, and it's slightly faster.
 * Use wrapper for id: `Long id` but not `long id`. And remember what is the difference between `==` and `equals`.
