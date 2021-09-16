@@ -1,6 +1,6 @@
 ### Common mistakes
 
- * Let's remove all TODOs comments before submitting solution.
+ * Let's remove all TODO comments before submitting solution.
  * Don't forget about empty lines in the end of files.
  * Let's make our log messages informative
 
