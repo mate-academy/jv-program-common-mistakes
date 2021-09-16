@@ -43,7 +43,7 @@
         int updatedRows = preparedStatement.executeUpdate();
         return updatedRows > 0;
   ```
-  Better not use `updatedRows == 1`, `updatedRows >= 1` - the example above, that uses comparison with `0`, is more flexible.
+  Don't use `updatedRows == 1` - the example above, that uses comparison with `0`, is more flexible.
 
 * Let's save each query in a separate variable.
     ```
