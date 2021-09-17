@@ -1,7 +1,7 @@
 ### Common mistakes
 
 * Don't forget about informative variable names.
-* You should use only @Component and @Inject annotations.
+* You should use only `@Component` and `@Inject` annotations.
 * Don't forget about annotations checks in your Injector class.
 * Let's check instances map before new instance creation.
 * Remember that we can replace multiple exceptions in the catch block with one common parent exception.
