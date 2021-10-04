@@ -22,7 +22,7 @@
     
     Good: manufacturers.name
     ```
-* Don't use `Statement.RETURN_GENERATED_KEYS` only in `create` statement, it's not needed in other methods.
+* Use `Statement.RETURN_GENERATED_KEYS` only in `create` statement, it's not needed in other methods.
 
 * Be attentive with:
     ```
