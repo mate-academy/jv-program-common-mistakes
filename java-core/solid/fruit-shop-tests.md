@@ -56,3 +56,6 @@ public void afterEachTest() {
     Storage.storage.clear();
 }
 ```  
+#### Try to avoid NPE in your code
+We need to make our code workable and we shouldn't get RuntimeException in runtime.
+So we shouldn't have test cases where the expected result is NPE.
