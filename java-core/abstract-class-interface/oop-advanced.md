@@ -55,7 +55,7 @@ public class FigureSupplier {
 ```
 Bad example:
 
-Square square = new Square(random.nextInt(10) + 1);
+Square square = new Square(random.nextInt(11));
 ```
 #### Don't use static methods in your solution
 Static methods are in general a bad practice. Let's better create an instance of a class which method you want to call.
