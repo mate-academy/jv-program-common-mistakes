@@ -120,8 +120,10 @@ For example, you need to create several users and write them in an array. In our
 Bad example:
 
 public class Main {
+    private static final int NUMBER_OF_USERS = 3;
+    
     public static void main(String[] args) {
-        User[] users = new User[3];
+        User[] users = new User[NUMBER_OF_USERS];
         User firstUser = new User();
         User secondUser = new User();
         User thirdUser = new User();
@@ -135,8 +137,10 @@ public class Main {
 Improved example:
 
 public class Main {
+    private static final int NUMBER_OF_USERS = 3;
+    
     public static void main(String[] args) {
-        User[] users = new User[3];
+        User[] users = new User[NUMBER_OF_USERS];
         for(int i = 0; i < users.length; i++) {
             users[i] = new User();
         }
