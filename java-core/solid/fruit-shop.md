@@ -6,9 +6,9 @@ In this case you will save a lot of time when you need to add/modify existing fu
 You can use packages to make the structure of the code better, so let's do it. Gather classes with same 
 purpose/common logic in a corresponding package.
 
-Your project structure should consist at least of the following packages:
+Your project structure should consist the following packages:
 - `db` for holding Storage
-- `model` for holding models like Fruit
+- `model` for holding models like Fruit (if necessary)
 - `service` for holding services, like Writer, Reader, and so on
 - `service.impl` for holding implementations of services
 - `strategy` for holding handlers for different operations (you are expected to apply Strategy pattern)
