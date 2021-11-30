@@ -2,13 +2,19 @@
 #### Follow SOLID rules
 Please design your classes according to the SOLID principles. Make your classes simple, reusable and focused on a single problem.
 In this case you will save a lot of time when you need to add/modify existing functionality in the future.
+#### Make your services independent and call them in main() method
+All services should be independent. 
+We shouldn't have Strategy and call its methods in CsvFileReaderService, or we shouldn't have CsvFileWriterService and call its methods in the Strategy class.
+
+Let's create `Main` class with `main()` method to show how the program works.
+Make all services independent and call them in the right order in `main()` method step by step (the result of previous service method should be the input for next one)
 #### Don't keep all logic in a single package
 You can use packages to make the structure of the code better, so let's do it. Gather classes with same 
 purpose/common logic in a corresponding package.
 
-Your project structure should consist at least of the following packages:
+Your project structure should consist the following packages:
 - `db` for holding Storage
-- `model` for holding models like Fruit
+- `model` for holding models like Fruit (if necessary)
 - `service` for holding services, like Writer, Reader, and so on
 - `service.impl` for holding implementations of services
 - `strategy` for holding handlers for different operations (you are expected to apply Strategy pattern)
@@ -32,9 +38,6 @@ Hide inner class elements with the help of access modifiers. It's a bad practice
 #### Use data structures from the Collection framework
 In order to represent fruit storage you may use already existing data structures, think of the one that will be 
 the most suitable for your needs.
-#### Make your services independent and show how your solution works
-Let's create `Main` class with `main()` method to show how the program works. Make your services independent
-and call them in the right order in `main()` method.
 #### Place the input and output files into the `src/main/resources` folder.
 #### Avoid hardcode in your solution
 * Use hardcoded values only in the Main class and/or test classes.  
