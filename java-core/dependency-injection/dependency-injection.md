@@ -5,25 +5,16 @@
 * Don't forget about annotations checks in your Injector class.
 * Let's check instances map before new instance creation.
 * Remember that we can replace multiple exceptions in the catch block with one common parent exception.
-* When throwing an exception add an informative message to it
+* When throwing an exception add an informative message to it. Also, don't forget to add an exception you're catching in `catch` block to the `RuntimeException` object you throw
 ``` 
 Bad example: 
+} catch(Exception e) {
   throw new SomeException("Can't initialize object with Injector");
+}
 ```
 ``` 
 Good example: 
-  throw new SomeException("Injection failed, missing @Component annotaion on the class " + someInfoAboutClass);
-```
-* Don't forget to add an exception you're catching in `catch` block to the `RuntimeException` object you throw.
-```text
-Bad example:
-  } catch (Exception e) {
-    throw new RuntimeException("Injection failed, missing @Component annotaion on the class " + someInfoAboutClass)
-  }
-```
-```text
-Good example:
-  } catch (Exception e) {
-    throw new RuntimeException("Injection failed, missing @Component annotaion on the class " + someInfoAboutClass, e)
-  }
+} catch(Exception e) {
+  throw new SomeException("Injection failed, missing @Component annotaion on the class " + someInfoAboutClass, e);
+}
 ```
