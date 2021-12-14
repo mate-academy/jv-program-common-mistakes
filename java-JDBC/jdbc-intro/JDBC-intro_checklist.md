@@ -98,3 +98,21 @@
        Good:
         SELECT * FROM manufacturers WHERE id = 1;
 ```           
+* When you convert `ResultSet` to `Manufacturer` better create an object using setters or constructor but not both of them, because it's not consistent to use both ways of initialization of object.
+```
+       Long id = rs.getObject(1, Long.class);
+       String name = rs.getString(2);
+       
+       Wrong:
+        Manufacturer manufacturer = new Manufacturer(name);
+        manufacturer.setId(id); 
+                          
+       Good:
+        Manufacturer manufacturer = new Manufacturer(id, name);
+        
+        Or
+        
+        Manufacturer manufacturer = new Manufacturer();
+        manufacturer.setId(id);  
+        manufacturer.setName(name);
+```   
