@@ -9,5 +9,6 @@ It’s better for performance to extract "ready to use" data from DB on dao laye
 * Let's return `Optional` in `get()` method on dao layer, and the entity on service layer.
 * Think what the difference between `getSingleResult()`, `uniqueResult()` and `uniqueResultOptional()`? Which one should we use?
 * Don’t create a default constructor when it is not needed.
+* Don't forget about HQL coding conventions, all reserved words should be in lowercase
 * Do not push redundant files or folders (iml, .idea, target, etc).
 * Run checkstyle and fix issues before push.

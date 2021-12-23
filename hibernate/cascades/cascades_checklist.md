@@ -8,3 +8,4 @@ ONLY if you want to run your solution in the main method.
 * You don't need to create your own exception, let's throw `RuntimeException` in the catch block. 
 * You need to open a transaction not only when creating entities but when removing as well.
 * Don't just copy paste code from other dao (make sure your exception messages and variable names are correct for particular class.
+* Don't forget about HQL coding conventions, all reserved words should be in lowercase
