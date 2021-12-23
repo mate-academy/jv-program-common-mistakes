@@ -5,8 +5,7 @@
 * Don't use alfa version of dependencies
 * Check your jsp naming to match the [convention](https://www.oracle.com/technical-resources/articles/javase/code-convention.html). It should start with lowercase letter and each adjacent word should start with capital letter. 
 ```
-Example:
-    thisIsMyFile.jsp
+Example: thisIsMyFile.jsp
 ```
 * If you want to run your code in the main method you should remove following line from pom.xml:
 
