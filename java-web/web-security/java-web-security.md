@@ -7,8 +7,8 @@
 * :exclamation: In AuthenticationFilter, think if this check `driverService.get(userId) == null` will actually work.  
 If inside your `driverService.get()` you are currently calling `get()` on Optional, 
 you can omit this check in AuthenticationFilter.
-* Make the name of the attribute that you set to the session a constant field in all classes where you use it. 
 * Both in AuthenticationServiceImpl and in AuthenticationFilter, use only one `if` block if possible.
+* Keep your endpoints naming consistent. For example, `GetMyCurrentCarsController` should have endpoint like this: `/drivers/cars`
 * :exclamation: In the `AuthenticationFilter` class, better create a `Set<String>` with allowed urls (you can initialize it in the `init()` method). 
   Then in the method `doFilter()` do following check:
 ```
