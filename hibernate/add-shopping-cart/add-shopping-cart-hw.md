@@ -20,3 +20,4 @@ The reason is that `ShoppingCart` object will have the `transient` state before 
 1. Try to think what should be called first `userService.add(user)` or `registerNewShoppingCart()`.
 1. Try to think what should you do first in method `addSession`: 
 `ticketDao.add(ticket);` or `shoppingCartService.update()`
+1. Remember to add `catch` blocks for operations of all types on DAO layer.   

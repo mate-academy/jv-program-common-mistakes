@@ -7,6 +7,7 @@
 * Use try with finally, where you use transaction and try with resources with Read operations.
 * Add a private default constructor to `HibernateUtil` class in order to prevent creating `HibernateUtil` objects.
 * Don’t create a default constructor when it is not needed.
+* Remember to add `catch` blocks for operations of all types on DAO layer.
 * Do not push redundant files or folders (iml, .idea, target, etc).
 * If you have problems connecting to MySql because of timezone issues, check out this [article](https://stackoverflow.com/questions/930900/how-do-i-set-the-time-zone-of-mysql).
 * Be attentive with checkstyle plugin. You have to add it in the right place:
