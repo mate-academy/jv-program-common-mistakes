@@ -1,6 +1,6 @@
 # Common mistakes
 
-* Let’s make the login unique.
+* Let’s make the email unique.
 * Custom `AuthenticationException` shouldn’t be `RuntimeException`.
 * `findByEmail()` - don’t complicate with unnecessary variables, expect to receive only one String param 
   in method arguments.
