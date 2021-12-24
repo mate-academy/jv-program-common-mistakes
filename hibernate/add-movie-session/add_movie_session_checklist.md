@@ -7,6 +7,7 @@
 It’s better for performance to extract "ready to use" data from DB on dao layer.
 * Movie sessions from `findAvailableSessions()` should have running time limited within the day that your receive as input parameter: `LocalDate date`.
 * Let's return `Optional` in `get()` method on dao layer, and the entity on service layer.
+* Remember to add `catch` blocks for operations of all types on DAO layer.  
 * Think what the difference between `getSingleResult()`, `uniqueResult()` and `uniqueResultOptional()`? Which one should we use?
 * Don’t create a default constructor when it is not needed.
 * Do not push redundant files or folders (iml, .idea, target, etc).
