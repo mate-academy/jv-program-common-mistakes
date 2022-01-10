@@ -17,6 +17,9 @@ You can expect that the entity with this id already exists in the DB.
 * All checks to see if any field is empty or that field should accept only numbers should be done by JSP. 
 HINT: use JSP input tag [properties](https://www.w3schools.com/html/html_form_input_types.asp)
 
+* If you use `sendRedirect()` method in your controllers, please pass `"request.getContextPath()" + "/your-endpoint"` as a parameter.
+Currently, the context path is empty, but if it is not, your code still should work.
+
 * If you have merge conflicts or travis ci build failure, fix them 
 * Let's use one style for creating URLs. Try putting at the first position in URL's name the name of the model with which we work.  
   If we work with the manufacturer - let's put it here: /[manufacturers]/.../... It is good practice to use plurals.
@@ -26,6 +29,7 @@ Good URLs naming in your project:
 /cars/drivers/add - (add driver to car)
 /cars/drivers/delete - (remove driver from car)
 /cars/drivers - (get all drivers from car)
+/drivers - (get all drivers)
 /drivers/add
 /drivers/delete
 /manufacturers/delete
@@ -36,6 +40,7 @@ Bad URLs naming in your project:
 /Cars/addDriver
 /deleteDriverFromCars
 /Drivers/add
+/drivers/all
 /delete-driver
 /manufacturer_Delete
 ```
