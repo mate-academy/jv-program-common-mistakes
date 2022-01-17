@@ -1,6 +1,7 @@
 # Spring REST
 
 * In order to properly use new dependencies in your project, you might need to run `mvn clean package`.
+* Make your code consistent. Use the @Autowired annotation everywhere with the constructors or delete it from everywhere.
 * Return `id` of entity in all response DTOs.
 * Remember about [REST resource-naming convention](https://restfulapi.net/resource-naming/).
 * In your mappers prefer setters over big constructors while converting entity to dto and vice versa.
