@@ -38,3 +38,4 @@
 * You can return information about tickets in your ShoppingCartResponseDto / OrderResponseDto in the form of `List<Long> tiketIds`.
 * When choosing the fields to be returned in your ShoppingCartResponseDto, keep in mind that `cartId` and `userId` hold the same value.
 * Don't expose secure data in your ResponseDtos.
+* Use `DtoRequestMapper` and `DtoResponseMapper` as types when you declare mapper fields in controllers.
