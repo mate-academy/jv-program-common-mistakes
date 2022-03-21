@@ -15,6 +15,9 @@ Correct [method names](https://mate-academy.github.io/style-guides/java/java.htm
 Keep in mind that String concatenation creates many new objects that take up a lot of memory if you use it inside 
 of a loop. Though it's safe to use it outside of a loop, because compiler will replace it with StringBuilder anyway  [java doc](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
 
+#### Use split() instead of substring()
+`substring()` messes the code in this task.
+
 #### Use constants
 If you have strange strings or numbers in the code, it's better to declare them as constants.
 The name of the constant should display this object's purpose.
