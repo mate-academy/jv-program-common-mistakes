@@ -1,6 +1,8 @@
 # Taxi service cleanup
+Taxi project will be added as a reference project to your CV. This project should be located in a newely created GitHub repo. The below you can find the instructions how to create a repo and the clean up your project.
+See instructions how to move source code from last HW (Web security topic) [here](https://youtu.be/3HHoJ_YZu6w).
 
-1. You must [create a new repo](add_video_about_it) with project collected from tasks from JDBC and Web modules.
+1. Create a new repo on GitHub. See instructions [here](https://dou.ua/forums/topic/28895/).
 2. Remove `Main` class.
 3. Add README with project description.
 4. If your code repeats several times inside of a class, move it to separate method.
