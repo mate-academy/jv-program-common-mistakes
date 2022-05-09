@@ -9,5 +9,6 @@
 ```
 assertThrows(ExpectedException.class, () -> object.methodUnderTest(inputParams);
 ```
+* Move all hardcoded values to [constant fields](https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names) and give them informative names.
 
 * Check your code for coverage with tests, expected coverage should be 90%+. [How to run](https://www.jetbrains.com/help/idea/running-test-with-coverage.html#run-config-with-coverage)
