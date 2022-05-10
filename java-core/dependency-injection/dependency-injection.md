@@ -18,3 +18,13 @@ Good example:
   throw new SomeException("Injection failed, missing @Component annotaion on the class " + someInfoAboutClass, e);
 }
 ```
+* It is better to replace many exceptions that have a common parent with a general parental exception.
+``` 
+Bad example: 
+} catch (InvocationTargetException | InstantiationException
+        | IllegalAccessException | NoSuchMethodException e) {
+```
+``` 
+Good example: 
+} catch (ReflectiveOperationException e) {
+```
