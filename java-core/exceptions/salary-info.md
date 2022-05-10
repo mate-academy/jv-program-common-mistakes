@@ -26,6 +26,9 @@ Different OS handle line separators differently. Instead of using `\n` or `\r\n`
 
 #### Remember about informative names of the variables.
 
+#### Any magic numbers should be constants
+Your code should be easy to read. Move all hardcoded values
+to [constant fields](https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names) and give them informative names.
+
 #### Write informative messages when you commit code or open a PR.
-         
 Bad example of commit/PR message: `done`/`fixed`/`commit`/`solution`/`added homework`/`my solution` and other one-word, abstract or random messages. 
