@@ -13,5 +13,4 @@ Let's create `add(Order order)` instead.
 The reason is that Hibernate will automatically delete these tickets from shoppingCart(in DB) after noticing them in our order object. 
 Let's do this manually using `clear()` method from `ShoppingCartService` after the order with tickets has been created.
 
-1. On DAO layer to get the order for a specific user create method `getByUser()`.
 1. Remember to add `catch` blocks for operations of all types on DAO layer.
