@@ -4,7 +4,7 @@
 If you create a formatter, make it a [constant](https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names).
 That will make your code easier to understand. Plus if you use it in several places in your code 
 you will be able to change its value easily with one action(change variable declaration). In other case you need to update
-value in each each place it's being used.
+value in each place it's being used.
 
 #### Use LocalDate instead of Date.
 Here is some [background](https://www.baeldung.com/migrating-to-java-8-date-time-api) why you should use it primarily.
