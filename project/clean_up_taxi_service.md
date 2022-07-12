@@ -18,4 +18,6 @@ See instructions how to move source code from last HW (Web security topic) [here
 12. Remove mentions of mate from pom.xml.
 13. Replace real values with stubs in ConnectionUtil.
 14. We recommend you to install this [plugin](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en), 
-especially if your level English isn't quite high, to decrease amount of possible errors during the writing of Readme. 
+especially if your level English isn't quite high, to decrease amount of possible errors during the writing of Readme.
+15. Check all you dao classes and rename all string variables with a query and PreparedStatement objects to just "query" and "statement' because 
+their context is already indicated in the method name.
