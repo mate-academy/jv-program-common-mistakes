@@ -80,18 +80,7 @@ We want to make our code universal and consistent.
 #### Use name() for getting String representation of enum constants
 
 Don't use `toString()` or `String.valueOf()`(it will call `toString()` under the hood) for getting `String` representation of enum constants. 
-`toString()` is common for all enum constants. If you override t#### Use name() for getting String representation of enum constants
-
-Don't use `toString()` or `String.valueOf()`(it will call `toString()` under the hood) for getting `String` representation of enum constants.
 `toString()` is common for all enum constants. If you override this method like below:
-````
- @Override
- public String() toString() {
-    return "default";
- }
-````
-then for every constant `toString()` will be returning `default`, that's not ok. So it's better to use standard method of enum `name()`
-that will be returning always `String` representation of concrete enum constant. his method like below:
 ````
  @Override
  public String() toString() {
