@@ -154,6 +154,7 @@ Please see [this article](https://mate-academy.github.io/style-guides/java/java.
 Bad example:
 public class FigureSupplier {
     private Random random = new Random();
+    
     public Figure getRandomFigure() {
         int `figureNumber` = random.nextInt(5);
         // generate a specific figure based on the `figureNumber` value
@@ -163,8 +164,9 @@ public class FigureSupplier {
 ```
 Improved example:
 public class FigureSupplier {
-    public static final int FIGURE_COUNT = 5;
+    private static final int FIGURE_COUNT = 5;
     private Random random = new Random();
+    
     public Figure getRandomFigure() {
         int figureNumber = random.nextInt(FIGURE_COUNT);
         // generate a specific figure based on the `figureNumber` value
