@@ -77,5 +77,18 @@ Returning `null` from a method is a bad practice. If you use switch-case in your
 Try not to use ukr/ru messages in `toString()` or `System.out.println()` statements.
 We want to make our code universal and consistent.
 
+#### Use name() for getting String representation of enum constants
+
+Don't use `toString()` or `String.valueOf()`(it will call `toString()` under the hood) for getting `String` representation of enum constants. 
+`toString()` is common for all enum constants. If you override this method like below:
+````
+ @Override
+ public String() toString() {
+    return "default";
+ }
+````
+then for every constant `toString()` will be returning `default`, that's not ok. So it's better to use standard method of enum `name()` 
+that will be returning always `String` representation of concrete enum constant. 
+
 #### Write informative messages when you commit code or open a PR.
 Bad example of commit/PR message: `done`/`fixed`/`commit`/`solution`/`added homework`/`my solution` and other one-word, abstract or random messages. 
