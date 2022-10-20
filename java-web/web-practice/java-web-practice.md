@@ -17,7 +17,7 @@ You can expect that the entity with this id already exists in the DB.
 * All checks to see if any field is empty or that field should accept only numbers should be done by JSP. 
 HINT: use JSP input tag [properties](https://www.w3schools.com/html/html_form_input_types.asp)
 
-* If you use `sendRedirect()` method in your controllers, please pass `"request.getContextPath()" + "/your-endpoint"` as a parameter.
+* If you use `sendRedirect()` method in your controllers, please pass `request.getContextPath() + "/your-endpoint"` as a parameter.
 Currently, the context path is empty, but if it is not, your code still should work.
 
 * If you have merge conflicts or travis ci build failure, fix them 
