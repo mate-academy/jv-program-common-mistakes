@@ -3,9 +3,9 @@
 * Don’t ignore checkstyle rules.
 * Figure out which way is better to initialize your RegistrationServiceImpl class instance: `@BeforeEach` or `@BeforeAll`, what’s the difference?
 * Make sure you name your methods according to [convention](https://google.github.io/styleguide/javaguide.html#s5.2.3-method-names).
-* Add tests for all possible User's parameters (null login/password/age, user under 18/18/over 18 years old, negative age, and so on...)
-* Make sure that after successful registration user was added to storage and `register` method returns correct user
-* Don't use `register` method to save a user in the storage when you test this method
+* Add tests for all possible User's parameters (null login/password/age, user under 18/18/over 18 years old, negative age, and so on...).
+* Make sure that after successful registration user was added to storage and `register` method returned correct user.
+* When you test `register` method don't use it to save a user in the storage (same login case).
 * Don't create one big if with all conditions. Better to split one big if into several small ones.
 
 ```java 
@@ -43,7 +43,7 @@ public User register(User user) {
 ```
 assertThrows(ExpectedException.class, () -> object.methodUnderTest(inputParams);
 ```
-* Don't use `NullPointerException`, because in such case we can't distinguish was this exception because of our mistake or because of validation
+* Don't use `NullPointerException`, because in such case we can't distinguish was this exception because of our mistake or because of validation.
 
 * Move all hardcoded values to [constant fields](https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names) and give them informative names.
 
