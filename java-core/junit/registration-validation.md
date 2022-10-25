@@ -5,7 +5,7 @@
 * Make sure you name your methods according to [convention](https://google.github.io/styleguide/javaguide.html#s5.2.3-method-names).
 * Add tests for all possible User's parameters (null login/password/age, user under 18/18/over 18 years old, negative age, and so on...).
 * Make sure that after successful registration user was added to storage and `register` method returned correct user.
-* When you test `register` method don't use it to save a user in the storage (same login case).
+* Use `storageDao.add` instead of `register` method to add user for testing.
 * Don't create one big if with all conditions. Better to split one big if into several small ones.
 
 ```java 
