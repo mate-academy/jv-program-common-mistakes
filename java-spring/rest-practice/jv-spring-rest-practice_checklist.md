@@ -14,7 +14,7 @@
             private final AuthenticationService service;
             
             @PostMapping
-            public void registration(@RequestBody UserRequestDto requestDto) {
+            public void register(@RequestBody UserRequestDto requestDto) {
                 service.register(requestDto.getEmail(), requestDto.getPassword());
             }
         }
@@ -25,7 +25,7 @@
             private final AuthenticationService service;
                     
             @PostMapping("/register")
-            public void registration(@RequestBody UserRequestDto requestDto) {
+            public void register(@RequestBody UserRequestDto requestDto) {
                 service.register(requestDto.getEmail(), requestDto.getPassword());
             }
             /*
