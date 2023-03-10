@@ -1,7 +1,21 @@
+### Common mistakes (jv-pecs)
+
+
 #### Parameterize `MachineProducer` in such a way that any implementation NOT using `Machine` or its subtype could NOT be created.
 For example, this code should not compile:
 ```java
 public class StringProducer implements MachineProducer<String> { }
+```
+#### Do not use raw types. Always parametrize interfaces and classes if it is possible.
+```java
+// Bad example:
+
+public class ExcavatorProducer implements MachineProducer {
+```
+```java
+// Improved example:
+
+public class ExcavatorProducer implements MachineProducer<Excavator> {
 ```
 #### Consider creating a local variable in your implementation of `getAll(Class type)` method.
 ```java
