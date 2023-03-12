@@ -1,4 +1,4 @@
-# HW 02
+## Common mistakes - jdbc 02 (jv-jdbc)
 
 * Try to avoid code duplication. Especially, when you are working with ResultSet.
   Move retrieving data from ResultSet into Entity object to a separate private method.
@@ -45,6 +45,14 @@
   ```
   Don't use `updatedRows == 1` - the example above, that uses comparison with `0`, is more flexible.
 
+* Remember about SQL style: use uppercase for SQL keywords in your queries.
+    ```sql     
+       Wrong:
+        SELECT * from manufacturers WHERE is_deleted = false;                    
+             
+       Good:
+        SELECT * FROM manufacturers WHERE is_deleted = FALSE;
+    ```    
 * Let's save each query in a separate variable.
     ```
         Wrong:
@@ -91,15 +99,15 @@
     ``` 
 
 * Don't use schema's name in your queries, cause you are configuring it while establishing a connection with DB.
-```sql     
+    ```sql     
        Wrong:
         SELECT * FROM schemaname.manufacturers WHERE id = 1;                     
              
        Good:
         SELECT * FROM manufacturers WHERE id = 1;
-```           
+    ```           
 * When you convert `ResultSet` to `Manufacturer` better create an object using setters or constructor but not both of them, because it's not consistent to use both ways of initialization of object.
-```
+    ```
        Long id = rs.getObject(1, Long.class);
        String name = rs.getString(2);
        
@@ -115,4 +123,4 @@
         Manufacturer manufacturer = new Manufacturer();
         manufacturer.setId(id);  
         manufacturer.setName(name);
-```   
+    ```   
