@@ -1,4 +1,4 @@
-## Common mistakes - jdbc 04 (jv-join)
+## Common mistakes (jv-join)
 
 * Do not implement following methods in DAO layer, only in service layer. Use update method from DAO.
     - ```void addDriverToCar(Driver driver, Car car);```

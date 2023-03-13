@@ -1,4 +1,4 @@
-## Common mistakes - jdbc 03 (jv-dao-service)
+## Common mistakes (jv-dao-service)
 
 * Run __`mvn clean package`__ after finish homework and before sending the solution.
 * Use `PreparedStatement` over `Statement`, even for a static query with no parameters in `getAll()` method. It's the best practice, and it's slightly faster.

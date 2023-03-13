@@ -1,4 +1,4 @@
-## Common mistakes - jdbc 02 (jv-jdbc)
+## Common mistakes (jv-jdbc)
 
 * Try to avoid code duplication. Especially, when you are working with ResultSet.
   Move retrieving data from ResultSet into Entity object to a separate private method.
