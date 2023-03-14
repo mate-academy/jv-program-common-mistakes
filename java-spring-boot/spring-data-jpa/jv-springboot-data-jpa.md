@@ -14,14 +14,14 @@ Use interface as type when you declare mapper fields in controllers.
     ```
          Wrong:
             @RestController
-            public class Controller {     
+            public class ProductController {     
                 private final ProductDtoMapper productMapper;
 
             }
     
          Good: 
             @RestController
-            public class Controller {     
+            public class ProductController {     
                 private final DtoMapper<Product, ProductRequestDto, ProductResponceDto> productMapper;
                         
             }
