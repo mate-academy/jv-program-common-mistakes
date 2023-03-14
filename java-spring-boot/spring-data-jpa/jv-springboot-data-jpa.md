@@ -11,7 +11,6 @@ Take a look at this article: https://nordicapis.com/10-best-practices-for-naming
 Follow Dependency Inversion principle. Create a parametrized interface (or two separate interfaces for request and respond) for DTO mapping. 
 Use interface as type when you declare mapper fields in controllers.
     
-    ```
          Wrong:
             @RestController
             public class ProductController {     
@@ -25,8 +24,6 @@ Use interface as type when you declare mapper fields in controllers.
                 private final DtoMapper<Product, ProductRequestDto, ProductResponceDto> productMapper;
                         
             }
-    ```
-
 #### Lombok (in case you use it)
 Lombok is a tool that makes our code cleaner and easier to read.
 
@@ -46,3 +43,4 @@ Take a look at these annotations (great source - https://projectlombok.org/featu
 Consider these articles: 
 1. https://habr.com/ru/company/haulmont/blog/564682/
 2. https://thorben-janssen.com/lombok-hibernate-how-to-avoid-common-pitfalls
+
