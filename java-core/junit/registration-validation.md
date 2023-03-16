@@ -4,7 +4,7 @@
 * Figure out which way is better to initialize your RegistrationServiceImpl class instance: `@BeforeEach` or `@BeforeAll`, what’s the difference?
 * Make sure you name your methods according to [convention](https://google.github.io/styleguide/javaguide.html#s5.2.3-method-names).
 * Add tests for all possible User's parameters (null login/password/age, user under 18/18/over 18 years old, negative age, and so on...).
-* In your testы very important to check **all possible edge cases**. For example, we have min password length 6 characters. 
+* In your tests very important to check **all possible edge cases**. For example, we have min password length 6 characters. 
 In this case would be good to test: empty password (0-length - not-ok), 'abc' (3-length - not-ok), 'abcdf' (5-length - **not-ok edge case**), 
 'abcdef' (6-length - **ok edge case**), 'abcdefgh' (8-length - ok). Few not-ok checks you can have in one not-ok test method. Same for ok-test.
 Testing only 'abc' (3-length - not-ok) and 'abcdefgh' (8-length - ok) is not enough because we do not check how the program behave with edge cases.
