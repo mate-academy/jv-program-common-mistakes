@@ -1,5 +1,6 @@
 ## Common mistakes (jv-array-list)
 
+##### Don't begin class or method implementation with empty line.
 ##### Don’t use class Objects.
 ##### Any magic numbers should be constants
 Your code should be easy to read. Move all hardcoded values to constant fields and give them informative names.
