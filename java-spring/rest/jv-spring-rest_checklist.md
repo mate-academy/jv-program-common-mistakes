@@ -1,13 +1,14 @@
-# Spring REST
+## Common mistakes (jv-spring-rest)
 
-* In order to properly use new dependencies in your project, you might need to run `mvn clean package`.
 * Make your code consistent. Use the @Autowired annotation everywhere with the constructors or delete it from everywhere.
 * Return `id` of entity in all response DTOs.
 * Remember about [REST resource-naming convention](https://restfulapi.net/resource-naming/).
 * In your mappers prefer setters over big constructors while converting entity to dto and vice versa.
 * Use Stream API while working with lists in your mappers.
-* In your MovieSessionRequest/ResponseDtos, we don't need to pass the whole information about Movie and CinemaHall - 
+* In your MovieSessionRequest/ResponseDtos, you don't need to pass the whole information about Movie and CinemaHall - 
 their ids will be enough.
+* Creating a MovieSession from RequestDto in the mapper you do not need to fetch Movie and CinemaHall from the DB by Ids. 
+Their Ids would be enough for Hibernate to save a new object with relations to DB: `movieSession.setMovie(new Movie(dto.getMovieId()));`  
 * When creating a MovieSession, if you need to accept `LocalDateTime` in request body - 
 add `jackson-datatype-jsr310` dependency to be able to parse it into MovieSessionRequestDto.
 * Your method names in controllers and mappers should have uniform names.
