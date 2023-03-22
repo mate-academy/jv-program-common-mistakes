@@ -6,7 +6,7 @@
 * In AuthenticationFilter, think if this check `driverService.get(userId) == null` will actually work.  
 If inside your `driverService.get()` you are currently calling `get()` on Optional, 
 you can omit this check in AuthenticationFilter.
-* Both in AuthenticationServiceImpl and in AuthenticationFilter, use only one `if` block.
+* Both in AuthenticationServiceImpl and in AuthenticationFilter, try to use only one `if` block.
 * If you use `sendRedirect()` method in your controllers, please pass `request.getContextPath() + "/your-endpoint"` as a parameter.
 Currently, the context path is empty, but if it is not, your code still should work.
 * Keep your endpoints naming consistent. For example, `GetMyCurrentCarsController` should have endpoint like this: `/drivers/cars`
