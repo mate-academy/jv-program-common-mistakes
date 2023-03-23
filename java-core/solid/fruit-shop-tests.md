@@ -1,6 +1,7 @@
 ## Common mistakes (jv-fruit-shop-tests)
 
-##### Don't begin class or method implementation with empty line.  Remove all redundant empty lines, be careful :)
+#### Don't begin class or method implementation with empty line. 
+Remove all redundant empty lines, be careful :)
 #### Remember about naming of test methods.
 There are a lot of ways to name your test methods. The main point is that 
 they should have informative names and be consistent along with other developers in your team. 
