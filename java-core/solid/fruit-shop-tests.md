@@ -1,5 +1,7 @@
 ## Common mistakes (jv-fruit-shop-tests)
 
+#### Don't begin class or method implementation with empty line. 
+Remove all redundant empty lines, be careful :)
 #### Remember about naming of test methods.
 There are a lot of ways to name your test methods. The main point is that 
 they should have informative names and be consistent along with other developers in your team. 
@@ -22,7 +24,7 @@ Example:
     FruitService -> FruitServiceTest  
     ...  
 ```  
-Same goes for files that you use in tests, let's put them into this folder: `src/test/resources/[your-files.csv]`   
+Same goes for files that you use in tests, **let's put them into this folder:** `src/test/resources/[your-files.csv]`   
 #### Try to cover different scenarios in tests
 Your task is to include edge cases apart from regular method use case.
 #### Don't test Main class
