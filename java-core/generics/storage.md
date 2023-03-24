@@ -1,6 +1,7 @@
 ## Common mistakes (jv-storage)
 
-#### Don't begin class or method implementation with empty line.  Remove all redundant empty lines, be careful :)
+#### Don't begin class or method implementation with empty line.  
+Remove all redundant empty lines, be careful :)
 #### All non-constant fields should be initialized in the constructor
 - Example:
     ```java

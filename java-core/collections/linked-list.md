@@ -1,6 +1,7 @@
 ## Common mistakes (jv-linked-list)
 
-#### Don't begin class or method implementation with empty line. Remove all redundant empty lines, be careful :)
+#### Don't begin class or method implementation with empty line. 
+Remove all redundant empty lines, be careful :)
 #### Don’t use class Objects.
 #### Make `Node` an inner class.
 The purpose of inner classes is to group classes that belong together, which makes your code more readable and maintainable.
