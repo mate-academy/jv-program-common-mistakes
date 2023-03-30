@@ -17,8 +17,8 @@ Testing only 'abc' (3-length - not-ok) and 'abcdefgh' (8-length - ok) is not eno
 Bad example:
 
 public User register(User user) {
- if (user.getLogin() != null 
-   && user.getPassword() != null
+ if (user.getLogin() == null 
+   && user.getPassword() == null
    && user.getAge() < MIN_AGE) {
    throw new RegistrationException("Invalid data");
  }
@@ -30,10 +30,10 @@ public User register(User user) {
 Good example:
 
 public User register(User user) {
- if (user.getLogin() != null) {
+ if (user.getLogin() == null) {
    throw new RegistrationException("Login can't be null");
  }
- if (user.getPassword() != null) {
+ if (user.getPassword() == null) {
    throw new RegistrationException("Password can't be null");
  }
  if (user.getAge() < MIN_AGE) {
