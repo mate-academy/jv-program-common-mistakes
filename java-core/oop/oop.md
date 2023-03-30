@@ -1,10 +1,9 @@
-### Common mistakes
+## Common mistakes (jv-oop)
 
 #### Please don't add redundant empty lines to your code.
 We don't need them after class declaration or method signature.
+* Bad example:
 ```
-Bad example:
-
 public class Main {
 
     public static void main(String[] args) {
@@ -13,9 +12,8 @@ public class Main {
     }
 }
 ```
+* Improved example:
 ```
-Improved example:
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -28,16 +26,16 @@ Use english only and make them informative:
 message should indicate what type of `Machine` is working right now `Truck`, `Bulldozer` or `Excavator`.
 
 #### Use abstract reference instead of specific one where possible: 
+* Bad example:
 ```
-Bad example:
 Cat fluffy = new Cat();
 Dog oscar = new Dog();
 ```
 This example is bad cause it won't allow us to use polymorphism in our code.
 Our reference is now bonded to specific implementation, but it is always better to depend on the abstraction.
 Let's see how we can improve it:
+* Improved example:
 ```
-Improved example:
 Animal fluffy = new Cat();
 Animal oscar = new Dog();
 ```  

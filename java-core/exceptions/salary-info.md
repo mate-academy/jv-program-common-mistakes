@@ -36,6 +36,7 @@ Do not use abstract words like `string` or `array` as variable name. Do not use 
         System.out.println(username);
     }
     ```
+
 #### Any magic numbers should be constants
 Your code should be easy to read. Move all hardcoded values
 to [constant fields](https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names) and give them informative names.
