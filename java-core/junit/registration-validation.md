@@ -18,8 +18,8 @@ Bad example:
 
 public User register(User user) {
  if (user.getLogin() == null 
-   && user.getPassword() == null
-   && user.getAge() < MIN_AGE) {
+   || user.getPassword() == null
+   || user.getAge() < MIN_AGE) {
    throw new RegistrationException("Invalid data");
  }
  return storageDao.add(user);
