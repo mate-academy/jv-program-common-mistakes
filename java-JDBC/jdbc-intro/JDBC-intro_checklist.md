@@ -27,10 +27,10 @@
 * Be attentive with:
     ```
         Wrong:
-            String manufacturerName = restulSet.getString("name");
+            String manufacturerName = resultSet.getString("name");
             Long manufacturerId = resultSet.getLong("id"); // return '0' if data is absent.
         Good:
-            String manufacturerName = restulSet.getString("name");
+            String manufacturerName = resultSet.getString("name");
             Long manufacturerId = resultSet.getObject("id", Long.class); // return 'null' if data is absent.
     ```
 
