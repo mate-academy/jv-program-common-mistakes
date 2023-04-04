@@ -19,7 +19,7 @@ Use interface as type when you declare mapper fields in controllers.
     
         }
     ```
- * Good: 
+ * Improved example: 
      ```
         @RestController
         public class ProductController {     
