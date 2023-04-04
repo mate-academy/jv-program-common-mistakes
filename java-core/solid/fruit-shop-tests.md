@@ -66,9 +66,7 @@ public void afterEachTest() {
     Storage.storage.clear();
 }
 ```  
-#### Test your strategy and all handlers separately from each other and from services
-<b>Unit testing is isolated testing. Don't forget this.</b> <br>
-Don't test your strategy in service (e.g. `FruitService`) where you use it. It's enough to create map with only one 
-handler type (e.g. `Balance`) and test it works.
+#### Unit testing is <ins>isolated</ins> testing
+Keep your strategy, handler, and service tests separate from each other. Each of them needs a separate test class with their corresponding test cases.
 
-Test all your handlers separately. Create test for every single handler and test as many scenarios as possible.
+Don't test your strategy in service (e.g. `FruitService`). It's enough to create a map with only one handler (e.g. `Balance`).
