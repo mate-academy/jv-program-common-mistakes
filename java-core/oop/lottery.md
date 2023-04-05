@@ -1,10 +1,9 @@
-### Common mistakes
+## Common mistakes (jv-lottery)
 
 #### Please don't add redundant empty lines to your code.
 We don't need them after class declaration or method signature.
+* Bad example:
 ```
-Bad example:
-
 public class Main {
 
     public static void main(String[] args) {
@@ -13,9 +12,8 @@ public class Main {
     }
 }
 ```
+* Improved example:
 ```
-Improved example:
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -24,27 +22,26 @@ public class Main {
 ```
 
 #### Don't create temporary variables if you can directly return value from the method
+* Bad example:
 ```
-Bad example:
-
 public User createUser(String name, int age) {
     User user = new User(name, age);
     return user;
 }
 ```
+* Improved example:
 ```
-Improved example:
-
 public User createUser(String name, int age) {
     return new User(name, age);
 }
 ```
 
 #### Don't use static methods in your solution
-Static methods are in general a bad practice. Let’s better create an instance of a class which method you want to call
-```
-Bad example:
+Static methods are in general a bad practice. Let’s better create an instance of a class which method you want to call.
 
+* Bad example:
+
+```
 public class UserService {
     public static User findByEmail(String email) {
        //some implementation
@@ -57,9 +54,10 @@ public class Main {
     }
 }
 ```
-```
-Improved example:
 
+* Improved example:
+
+```
 public class UserService {
     public User findByEmail(String email) {
        //some implementation
@@ -74,11 +72,9 @@ public class Main {
 }
 ```
 
-
 #### Don't create several instances of the same class if you can use only one instance for your purposes
+* Bad example:
 ```
-Bad example:
-
 public class Main {
     public static void main(String[] args) {
         String[] emails = {"myEmail@gmail.com", "not@Valid@.g.com"};
@@ -90,9 +86,8 @@ public class Main {
     }
 }
 ```
+* Improved example:
 ```
-Improved example:
-
 public class Main {
     public static void main(String[] args) {
         String[] emails = {"myEmail@gmail.com", "not@Valid@.g.com"};
@@ -106,19 +101,39 @@ public class Main {
 }
 ```
 
-#### Don't forget how to name constants according to style guide (the same with naming of enum values)
+#### Think about which variables should be local in the method and which should be class-level
+* Bad example:
+```
+public class AccauntService {
+    public int calculateTax(int income) {
+        TaxService taxService = new TaxService();
+        int tax = taxService.getTax();
+        return income * tax / 100;
+    }
+}
+```
+* Improved example:
+```
+public class AccauntService {
+    private TaxService taxService = new TaxService();
 
+    public int calculateTax(int income) {        
+        int tax = taxService.getTax();
+        return income * tax / 100;
+    }
+}
+```
+
+#### Don't forget how to name constants according to style guide (the same with naming of enum values)
 https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names
 
 #### Pay attention to access modifiers
-
 Classes, fields, constructors, methods must have access modifiers otherwise default will be used that isn't a good practice.
 
 #### Use for loop for creating several objects of the same class 
 For example, you need to create several users and write them in an array. In our case let's say number of users is 3.
+* Bad example:
 ```
-Bad example:
-
 public class Main {
     private static final int NUMBER_OF_USERS = 3;
     
@@ -133,9 +148,8 @@ public class Main {
     }
 }
 ```
+* Improved example:
 ```
-Improved example:
-
 public class Main {
     private static final int NUMBER_OF_USERS = 3;
     
@@ -150,8 +164,8 @@ public class Main {
 
 #### All magic numbers in your code should be constants.
 Please see [this article](https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names) to learn about constant fields and their naming requirements.
+* Bad example:
 ```
-Bad example:
 public class FigureSupplier {
     private Random random = new Random();
     
@@ -161,8 +175,8 @@ public class FigureSupplier {
     }
 }
 ```
+* Improved example:
 ```
-Improved example:
 public class FigureSupplier {
     private static final int FIGURE_COUNT = 5;
     private Random random = new Random();
@@ -188,6 +202,5 @@ then for every constant `toString()` will be returning `default`, that's not ok.
 that will be returning always `String` representation of concrete enum constant.
 
 
-#### Write informative messages when you commit code or open a PR.
-         
+#### Write informative messages when you commit code or open a PR.         
 Bad example of commit/PR message: `done`/`fixed`/`commit`/`solution`/`added homework`/`my solution` and other one-word, abstract or random messages. 
