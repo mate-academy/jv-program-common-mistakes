@@ -48,8 +48,7 @@ __Example__: find the following code in the `pom.xml` and change `Main` accordin
 ```  
 
 #### Don't use any other version of JUnit
-Use JUnit4 that is already present in your `pom.xml`.
-
+Use JUnit5 that is already present in your `pom.xml`.
 #### Ensure that you test your services and their independently
 If you are testing FruitService behaviour - don't use FileReader or any other service in your tests.
 
@@ -68,8 +67,12 @@ public void getReport_Ok() {
     Assert.assertEquals(expected, actual);
 }
 
-@After
+@AfterEach
 public void afterEachTest() {
     Storage.storage.clear();
 }
 ```  
+#### Unit testing is <ins>isolated</ins> testing
+Keep your strategy, handler, and service tests separate from each other. Each of them needs a separate test class with their corresponding test cases.
+
+Don't test your strategy in service (e.g. `FruitService`). It's enough to create a map with only one handler (e.g. `Balance`).
