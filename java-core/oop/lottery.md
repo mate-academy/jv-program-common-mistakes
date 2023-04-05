@@ -37,8 +37,10 @@ public User createUser(String name, int age) {
 ```
 
 #### Don't use static methods in your solution
-Static methods are in general a bad practice. Let’s better create an instance of a class which method you want to call
+Static methods are in general a bad practice. Let’s better create an instance of a class which method you want to call.
+
 * Bad example:
+
 ```
 public class UserService {
     public static User findByEmail(String email) {
