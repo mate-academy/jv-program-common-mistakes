@@ -18,6 +18,7 @@ public interface CalculateArea {
 public interface AreaCalculator {
 }
 ```
+
 #### Don't put all behaviour into a single interface if the methods are conceptually different from each other.
 All our classes and interfaces should have a single purpose - `draw()` and `getArea()` methods are not conceptually close to each other.
 
