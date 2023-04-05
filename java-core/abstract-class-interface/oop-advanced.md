@@ -46,6 +46,7 @@ public class AccauntService {
     }
 }
 ```
+
 #### All magic numbers in your code should be constants.
 Please see [this article](https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names) to learn about constant fields and their naming requirements.
 * Bad example:
@@ -71,12 +72,14 @@ public class FigureSupplier {
     }
 }
 ```
+
 #### Сreating a figure, don't pass expressions in constructor. 
 Сreate separate variables and pass them for better code readability.
 * Bad example:
 ```
 Square square = new Square(random.nextInt(10) + 1);
 ```
+
 #### Don't use static methods in your solution
 Static methods are in general a bad practice. Let's better create an instance of a class which method you want to call.
 

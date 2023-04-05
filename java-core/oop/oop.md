@@ -39,11 +39,11 @@ Let's see how we can improve it:
 Animal fluffy = new Cat();
 Animal oscar = new Dog();
 ```  
+
 #### Depending on the case, class elements should have different access modifiers
 Remember that if you don't use any access modifiers that will apply the default one. Do we always want
 to have all elements with default access modifiers? Remind yourself about encapsulation principle and 
 when private or public should be used.
 
-#### Write informative messages when you commit code or open a PR.
-         
+#### Write informative messages when you commit code or open a PR.         
 Bad example of commit/PR message: `done`/`fixed`/`commit`/`solution`/`added homework`/`my solution` and other one-word, abstract or random messages. 
