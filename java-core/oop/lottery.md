@@ -68,7 +68,6 @@ public class Main {
 }
 ```
 
-
 #### Don't create several instances of the same class if you can use only one instance for your purposes
 * Bad example:
 ```
@@ -97,6 +96,7 @@ public class Main {
     }
 }
 ```
+
 #### Think about which variables should be local in the method and which should be class-level
 * Bad example:
 ```
@@ -119,12 +119,11 @@ public class AccauntService {
     }
 }
 ```
-#### Don't forget how to name constants according to style guide (the same with naming of enum values)
 
+#### Don't forget how to name constants according to style guide (the same with naming of enum values)
 https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names
 
 #### Pay attention to access modifiers
-
 Classes, fields, constructors, methods must have access modifiers otherwise default will be used that isn't a good practice.
 
 #### Use for loop for creating several objects of the same class 
@@ -199,6 +198,5 @@ then for every constant `toString()` will be returning `default`, that's not ok.
 that will be returning always `String` representation of concrete enum constant.
 
 
-#### Write informative messages when you commit code or open a PR.
-         
+#### Write informative messages when you commit code or open a PR.         
 Bad example of commit/PR message: `done`/`fixed`/`commit`/`solution`/`added homework`/`my solution` and other one-word, abstract or random messages. 
