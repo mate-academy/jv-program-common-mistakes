@@ -29,6 +29,7 @@ Do not use abstract words like `string` or `array` as variable name. Do not use 
         System.out.println(username);
     }
     ```
+
 #### Don’t complicate if-else construction. [Detailed explanation.](https://www.youtube.com/watch?v=P-UmyrbGjwE&list=PL7FuXFaDeEX1smwnp-9ri8DBpgdo7Msu2)
 #### Don’t create repeating code.
 If the logic of your code repeats - move it to the separate private method. 
