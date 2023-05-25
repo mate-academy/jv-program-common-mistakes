@@ -13,6 +13,7 @@ Remove all redundant empty lines, be careful :)
         }
     }
     ```
+
 #### Any magic numbers should be constants
 Your code should be easy to read. Let's move all hardcoded values to constant fields and give them informative names.
 
@@ -37,6 +38,7 @@ Your code should be easy to read. Let's move all hardcoded values to constant fi
         }
     }
     ```
+
 #### Don’t use any kind of List, Set or Map
 We will soon learn how these collections work.
 #### Don’t create repeating code
