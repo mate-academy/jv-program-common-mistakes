@@ -41,7 +41,7 @@ If the method has only a utility purpose and is used only inside the same class,
 
 #### Don't ignore exceptions
 Leaving empty catch block or `e.printStackTrace` here is a bad practice. 
-Better re-throw `RuntimeException` with original exception and some message in the parameters:
+Better re-throw `RuntimeException` with original exception and informative message in the parameters:
 ```
 catch (Exception e) {
     throw new RuntimeException("Can't read data from the file " + fileName, e);
