@@ -1,7 +1,6 @@
 ### DateTime API
 
-#### Don't complicate if-else construction.
-[Videos with example](https://www.youtube.com/watch?v=P-UmyrbGjwE&list=PL7FuXFaDeEX1smwnp-9ri8DBpgdo7Msu2)
+#### Don’t complicate if-else construction. [Detailed explanation](./../complicated-if-else.md)
 
 #### If you create a formatter/use custom timezone, make it a constant field. Remember about informative names and `private` access modifiers.
 

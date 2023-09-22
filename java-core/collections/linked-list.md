@@ -30,7 +30,7 @@ Do not use abstract words like `string` or `array` as variable name. Do not use 
     }
     ```
 
-#### Don’t complicate if-else construction. [Detailed explanation.](https://www.youtube.com/watch?v=P-UmyrbGjwE&list=PL7FuXFaDeEX1smwnp-9ri8DBpgdo7Msu2)
+#### Don’t complicate if-else construction. [Detailed explanation](./../complicated-if-else.md)
 #### Don’t create repeating code.
 If the logic of your code repeats - move it to the separate private method. 
 Remember about [DRY and KISS](https://dzone.com/articles/software-design-principles-dry-and-kiss) principles.

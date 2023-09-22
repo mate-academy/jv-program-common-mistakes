@@ -1,6 +1,6 @@
 ### Common mistakes
 
-#### Please remember all [rules](https://www.youtube.com/watch?v=QwwzLKG_ZXg) to override `equals()`
+#### Please remember all rules to override `equals()`
 #### Use prime numbers for your `hashCode()` implementation
 Prime numbers are chosen to help optimize the data storage in memory.
 #### Don’t forget about access modifiers

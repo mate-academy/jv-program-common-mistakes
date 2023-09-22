@@ -27,7 +27,7 @@ public class Shelf {
     }
 }
 ```
-#### Don’t complicate if-else construction. [Detailed explanation.](https://www.youtube.com/watch?v=P-UmyrbGjwE&list=PL7FuXFaDeEX1smwnp-9ri8DBpgdo7Msu2)
+#### Don’t complicate if-else construction. [Detailed explanation](./../complicated-if-else.md)
 #### Don’t create repeating code.
 If the logic of your code repeats - move it to the separate private method. For example, the index check for `get()`, `set()` and `remove()` methods should be moved to the separate method.
 
