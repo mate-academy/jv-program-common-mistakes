@@ -1,20 +1,17 @@
-### Common mistakes
+### Common Mistakes
 
-#### Use single loop instead of a nested one where possible
-Algorithms with nested loops require more computational resources comparing to the ones with single loop. 
-As a result you may receive performance degradation when overusing this approach. Always try to avoid nested 
-loops where possible.
+#### Prefer Single Loop Over Nested Loops Where Possible
+Algorithms with nested loops require more computational resources compared to those with a single loop. As a result, you may experience performance degradation when overusing this approach. Always try to avoid nested loops where possible.
 
-#### Follow checkstyle rules: 
-```
-Bad practice:
+#### Adhere to Checkstyle Rules:
+```java
+// Bad practice:
 for(int i=0;i<array.length;i++){
 if(array[i]>max)
 max=array[i];
 }
-```
-```
-Refatored code:
+
+// Refactored code:
 for (int i = 0; i < array.length; i++) {
     if (array[i] > max) {
         max = array[i];
@@ -23,15 +20,14 @@ for (int i = 0; i < array.length; i++) {
 ```
 [CheckStyle rules](https://google.github.io/styleguide/javaguide.html)
 
-#### Variable naming
-Incorrect naming may have significant impact on your code readability!  
-```
-Bad naming:
+#### Pay Attention to Variable Naming
+Incorrect naming can significantly impact your code readability!
+```java
+// Bad naming:
 int[][] m = new int[x][y];
 int[] d = getDiagonal(m);
-```  
-```
-Good naming: 
+
+// Good naming:
 int[][] matrix = initializeMatrix();
 int[] diagonal = getDiagonal(matrix);
-```  
+```

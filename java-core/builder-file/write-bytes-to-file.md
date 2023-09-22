@@ -1,12 +1,12 @@
-### Common mistakes
+### Common Mistakes
 
-#### Don't ignore exceptions
-Leaving empty catch block or `e.printStackTrace` here is a bad practice. 
-Better re-throw `RuntimeException` with original exception and some message in the parameters:
-```
+#### Don't Ignore Exceptions
+Leaving an empty catch block or using `e.printStackTrace` is a bad practice. It's better to re-throw a `RuntimeException` with the original exception and include a message in the parameters:
+```java
 catch (Exception e) {
     throw new RuntimeException("Can't write data to file " + fileName, e);
 }
 ```
 
-#### Remember about informative name of the variables
+#### Use Informative Variable Names
+Ensure that the names of your variables are informative and reflect the data they hold. This makes your code more readable and understandable to others, and to "future you."

@@ -1,18 +1,17 @@
 ### DateTime API
 
-#### Don’t complicate if-else construction. [Detailed explanation](./../complicated-if-else.md)
+#### Simplify If-Else Constructions [Detailed explanation](./../complicated-if-else.md)
 
-#### If you create a formatter/use custom timezone, make it a constant field. Remember about informative names and `private` access modifiers.
+#### Make Formatters/Custom Timezones Constant Fields
+If you create a formatter or use a custom timezone, make it a constant field. Remember to use informative names and `private` access modifiers.
 
-#### Avoid magic numbers in your code.
-They should be constants.
+#### Avoid Magic Numbers in Your Code
+These should be defined as constants.
 
-#### Avoid calling LocalDate.now multiple times in one method. Let's create a variable in the method for this purpose.
-LocalDate.now() gives us a different result if the next day has come. Of course, your code won't run 
-for such a long time(I hope), but it's a good habit especially if you're working with LocalDateTime.now() method.
+#### Avoid Multiple Calls to LocalDate.now in a Single Method
+Create a variable within the method for this purpose. `LocalDate.now()` yields a different result if the date changes to the next day during execution. While your code may not run for such a long duration (hopefully), it's a good habit to adopt, especially when working with the `LocalDateTime.now()` method.
 
-P.S. of course there are some cases when you need the strict current time in each point of your program 
-even withing one execution, but this not one of those.
+P.S. Of course, there are cases when you need the exact current time at each point in your program within a single execution, but this is not one of those cases.
 
-#### Before creating your own formatter, check out whether it is already defined in `DateTimeFormatter` class.
-[Documentation](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html) 
+#### Check Existing Formatters Before Creating Your Own
+Before creating your own formatter, check whether it's already defined in the `DateTimeFormatter` class. [Documentation](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html)
