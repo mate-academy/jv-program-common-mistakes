@@ -6,7 +6,7 @@ Try to find the behavior that you need among the [existing ones](https://docs.or
 #### Don't use magic numbers in your code
 Your code should be easy to read. Move all hardcoded values 
 to [constant fields](https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names) and give them informative names.
-#### Don’t complicate if-else construction. [Detailed explanation.](https://www.youtube.com/watch?v=P-UmyrbGjwE&list=PL7FuXFaDeEX1smwnp-9ri8DBpgdo7Msu2)
+#### Don’t complicate if-else construction. [Detailed explanation](./../complicated-if-else.md)
 #### Don't use hardcode where you need to return random values
 Try using methods of the `java.util.Random` class instead.
 #### Don’t create redundant variables.
