@@ -1,9 +1,9 @@
-### Common mistakes
+### Common Mistakes
 
-#### Variable naming
-Incorrect naming may have significant impact on your code readability!  
+#### Variable Naming
+Incorrect naming can significantly impact the readability of your code!
 
-#### Don’t complicate if-else construction. [Detailed explanation](./../complicated-if-else.md)
+#### Simplify If-Else Constructions [Detailed explanation](./../complicated-if-else.md)
 
-#### Don't complicate your code
-You should not use for loop to implement this task, TreeSet is enough.
+#### Avoid Overcomplicating Your Code
+You should not use a for loop to implement this task; a TreeSet is sufficient.

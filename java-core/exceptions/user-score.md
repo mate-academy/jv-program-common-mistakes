@@ -1,29 +1,24 @@
-### Common mistakes
+### Common Mistakes
 
-#### Don’t use commented code.
-It's important to develop good practices from the very beginning and fix bad ones. Pushing commented code belongs to the second group.
-So whenever you create PR double check for absence of commented code.
-The main problem is that commented code adds confusion with no real benefit, because while using repository
-with commented code in it you will waste time analyzing its purpose and the reason it was added in the first place.
+#### Avoid Commented Code
+It's important to develop good practices from the outset and rectify bad ones. Pushing commented code falls into the latter category. Therefore, whenever you create a Pull Request (PR), ensure there is no commented code present. The primary issue with commented code is that it adds confusion without any real benefit. When working with a repository containing commented code, you will waste time analyzing its purpose and the reason it was added in the first place.
 
-#### Don’t complicate if-else construction. [Detailed explanation](./../complicated-if-else.md)
+#### Simplify If-Else Constructions [Detailed explanation](./../complicated-if-else.md)
 
-#### Be attentive about the class you extend to declare your exception.
-Should it extend `RuntimeException` or `Exception` and why? (double check task description)
+#### Be Mindful of the Class You Extend When Declaring Your Exception
+Should it extend `RuntimeException` or `Exception`, and why? (Double-check the task description.)
 
-#### Be attentive about exception with method signature.
-Should we use `throws` keyword with method `getUserScore()`? Let's think about it.
+#### Be Mindful of Exceptions in Method Signatures
+Should we use the `throws` keyword with the `getUserScore()` method? Let's think about it.
 
-#### Don’t create unneeded variables.
-Try to keep your code simple. That is one of the core principle in programming. If you create a variable without any
-particular reason in mind - think twice if it is required and whether we can complete task without it and we won't
-decrease code readability.
+#### Avoid Unnecessary Variables
+Strive to keep your code simple, as simplicity is a core principle in programming. If you create a variable without a particular reason, think twice about its necessity and whether the task can be completed without it without compromising code readability.
 
-#### Remember about informative name of the variables.
+#### Use Informative Variable Names
 
-#### Don't complicate your code with a lot of empty lines.
-```
-Bad example:
+#### Avoid Excessive Empty Lines
+```java
+// Bad example:
 public int add(int a, int b) {
 
     int result = a + b;
@@ -33,16 +28,14 @@ public int add(int a, int b) {
     
 }
 
-Good example:
+// Good example:
 public int add(int a, int b) {
     return a + b;
 }
 ```
 
-#### Don't hardcode the message in the exception class, pass it to the constructor.
-Hardcoding reduces the flexibility of the code by forcing actual values into the source code.
+#### Avoid Hardcoding Messages in Exception Classes; Pass Them to the Constructor
+Hardcoding reduces code flexibility by embedding actual values within the source code.
 
-#### Any magic numbers should be constants
-Your code should be easy to read. Move all hardcoded values
-to [constant fields](https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names) and give them informative names.
-For example: constants can be `email position in the array`, `score position in the array`.
+#### Replace Magic Numbers with Constants
+Your code should be easy to read. Move all hardcoded values to [constant fields](https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names) and give them informative names. For example, constants can be named `EMAIL_POSITION_IN_ARRAY`, `SCORE_POSITION_IN_ARRAY`.

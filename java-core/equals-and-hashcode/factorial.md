@@ -1,20 +1,19 @@
-### Common mistake
+### Common Mistake
 
-#### Don't complicate if else construction
-Don't use `else` blocks if we can avoid them. That makes code easier to read.
-```
-Bad Example:
- public int returnModulus(int input) {
+#### Simplify If-Else Constructions
+Avoid using `else` blocks when they can be omitted, as this makes the code easier to read.
+```java
+// Bad Example:
+public int returnModulus(int input) {
     if (input % 2 == 0) {
         return 0;
     } else {
         return 1;
     }
 }
-```
-```
-Refactored code: 
- public int returnModulus(int input) {
+
+// Refactored code:
+public int returnModulus(int input) {
     if (input % 2 == 0) {
         return 0;
     }
@@ -22,8 +21,7 @@ Refactored code:
 }
 ```
 
-#### Keep your code simple and clean 
- - Don't use short variable naming that consists of 1 or 2 letters. Other developers, including yourself 
-in a few weeks, won't understand what's going on in the code. 
- - Don't make your code longer unnecessarily by adding empty lines between lines of codes.
- - Same with redundant variables, don't create any unless it solves a particular problem for you.
+#### Maintain Simplicity and Clarity in Your Code
+- Avoid using short variable names that consist of only one or two letters. Other developers, including your future self, may struggle to understand the code.
+- Don't unnecessarily elongate your code by adding empty lines between lines of code.
+- Similarly, avoid creating redundant variables unless they solve a specific problem for you.

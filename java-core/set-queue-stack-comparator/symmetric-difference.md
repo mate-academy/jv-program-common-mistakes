@@ -1,20 +1,18 @@
-### Common mistakes
+### Common Mistakes
 
-#### Check existing methods of the `Set` interface
-Interface `Set` has a lot of [methods](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html). 
-It is better to use existing methods, if possible, than to create your own.
+#### Explore Existing Methods of the `Set` Interface
+The `Set` interface provides a variety of [methods](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html). It's preferable to utilize these existing methods, when possible, rather than creating your own.
 
-#### Don't copy `Set` using loops
-A lot of `Set` implementations have a constructor that takes Collection as a parameter. 
-So we can use this constructor to initialize a `Set` with data from other collection.
+#### Avoid Copying `Set` Using Loops
+Many `Set` implementations have a constructor that accepts a Collection as a parameter. You can use this constructor to initialize a `Set` with data from another collection.
 
-#### Use abstract reference instead of more specific one: 
-```
-Bad example:
+#### Prefer Abstract References Over More Specific Ones:
+```java
+// Bad example:
     HashSet set = new HashSet();
 ```
-This example is bad cause it won't allow us to use polymorphism in our code.
-```
-Improved example:
+This example is unfavorable as it doesn't allow us to use polymorphism in our code.
+```java
+// Improved example:
     Set set = new HashSet();
 ```

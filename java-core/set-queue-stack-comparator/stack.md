@@ -1,37 +1,36 @@
-### Common mistakes
+### Common Mistakes
 
-#### Don't use magic numbers in the code
-Your code should be easy to read. Move all hardcoded values 
-to [constant fields](https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names) and give them informative names.
+#### Avoid Magic Numbers in the Code
+Your code should be easy to read. Move all hardcoded values to [constant fields](https://mate-academy.github.io/style-guides/java/java.html#s5.2.4-constant-names) and give them informative names.
 
-#### Don't use getters and setters in class Node
-We have access to private fields of inner class, so using getters or setters is redundant.
+#### Skip Getters and Setters in Class Node
+We have access to private fields of the inner class, so using getters or setters is redundant.
 
-#### Parameterize Node class 
-Class `Node` takes a value, so we should parameterize it to prevent problems with data types.
+#### Parameterize the Node Class
+Class `Node` accepts a value, so we should parameterize it to prevent issues with data types.
 
-#### Don't use public access modifiers everywhere
-If the method has only a utility purpose and is used only inside the same class, it should not be 
-`public`. Keep your code as close as possible to follow the encapsulation principle.
+#### Don't Overuse Public Access Modifiers
+If a method serves a utility purpose and is used only within the same class, it should not be `public`. Adhere to the encapsulation principle by keeping your code as restricted as possible.
 
-#### Avoid default access modifiers
-All fields and methods should have access modifiers. Remember about the encapsulation principle.
+#### Avoid Default Access Modifiers
+All fields and methods should have access modifiers. Remember the encapsulation principle.
 
-#### Variable naming
-Incorrect naming may have significant impact on your code readability!  
-```
-Bad naming:
+#### Pay Attention to Variable Naming
+Incorrect naming can significantly impact your code readability!
+```java
+// Bad naming:
     T[] a;
 ```  
-```
-Good naming: 
+```java
+// Good naming:
     T[] stack;
 ```  
-#### If your implementation is based on an array, use annotation `@SuppressWarnings("unchecked")` if test is failed with error: `uses unchecked or unsafe operations`
-Suppressing the warning with @SuppressWarnings("unchecked") tells the compiler that the programmer believes the code to be safe and won't cause unexpected exceptions.
-```
-Example:
+
+#### Use Annotation `@SuppressWarnings("unchecked")` if Your Implementation is Based on an Array and a Test Fails with the Error: `uses unchecked or unsafe operations`
+Suppressing the warning with `@SuppressWarnings("unchecked")` informs the compiler that the programmer believes the code to be safe and won't cause unexpected exceptions.
+```java
+// Example:
 @SuppressWarnings("unchecked")
 public class Stack<T> {
 }
-``` 
+```

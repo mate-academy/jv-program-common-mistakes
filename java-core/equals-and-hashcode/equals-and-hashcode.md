@@ -1,37 +1,34 @@
-### Common mistakes
+### Common Mistakes
 
-### Keep the code simple while comparing something:
-Try to make your code more simple where it's possible
+#### Simplify Code When Making Comparisons:
+Aim to simplify your code wherever possible.
+```java
+// Bad example:
+if (a == b) {
+    return true;
+}
+
+// Refactored code:
+return a == b;
 ```
-Bad example:
- if (a == b) {
- return true;
- }
-```
-```
-Refactored code:
- return a == b;
-```
 
-#### Don't cast an object every time you compare each set of fields
-In method `equals` let's not cast the input object always during field comparison instead, you can
-create a new object and cast it to the needed type just once.
+#### Avoid Casting Objects Repeatedly When Comparing Fields:
+In the `equals` method, avoid casting the input object during each field comparison. Instead, create a new object and cast it to the required type just once.
 
-#### Think of what you want to use: `instanceof` or `getClass()`
-You should choose which of these options will suit us the best. What's the difference between them? 
+#### Decide Between `instanceof` and `getClass()`:
+Choose the option that best suits your needs. What's the difference between them?
 
-#### Follow every rule of equals and hashcode contract
-Remember all theory that you've just learned, does your code fulfill all requirements? 
-If not you may get unpredictable results especially while using your class with collections, like HashMap.
+#### Adhere to the Equals and HashCode Contract:
+Recall the theory you've learned and ensure your code fulfills all the requirements. Failing to do so may lead to unpredictable results, especially when using your class with collections like HashMap.
 
-#### Don't use methods of the Objects.class
-Objects.class can make this task a bit easier because you can delegate null checks to it, but we strongly recommend you not to use it here. Our current task now is to understand how basic methods work inside of the box and why certain checks are important while writing your code.
+#### Avoid Using Methods from the Objects Class:
+The Objects class can simplify this task by delegating null checks to it, but we strongly recommend not using it here. The current task aims to help you understand how basic methods work and why certain checks are important when writing your code.
 
-#### Use `this` keyword only when it's absolutely necessary
+#### Use the `this` Keyword Only When Absolutely Necessary:
 ```java
 public class Square {
     public Integer width;
-    // necessary to use `this` keyword because of variable shadowing
+    // Necessary to use `this` keyword due to variable shadowing
     public Square(Integer width) {
         this.width = width;
     }
